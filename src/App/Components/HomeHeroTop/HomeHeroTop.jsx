@@ -17,13 +17,13 @@ function HomeHeroTop() {
 	return (
 		<Card className={styles.hero}>
 			<Header />
-			<Container className="mt-3 text-light">
+			<Container className="mt-5 text-light">
 				<Row>
 					<Col xs="9">
 						<CardTitle as={'h1'}>
 							Discover comfort, style and quality craftmanship
 						</CardTitle>
-						<CardText className="mb-0 mt-4">
+						<CardText className="mb-0 mt-4 fs-5">
 							Our furniture embodies a perfect blend of
 							functionality and aesthetic appeal ensuring that
 							every piece enhances your home.
