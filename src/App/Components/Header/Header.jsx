@@ -35,7 +35,7 @@ function Header() {
 							</NavLink>
 						</NavItem>
 						<NavItem>
-							<NavLink href="#products">About Us</NavLink>
+							<NavLink href="#products">Products</NavLink>
 						</NavItem>
 						<NavItem>
 							<NavLink href="#about">About Us</NavLink>
