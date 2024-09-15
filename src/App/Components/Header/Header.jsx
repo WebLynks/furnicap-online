@@ -14,9 +14,9 @@ import furnicap_logo from '../../../Assets/furnicao_logo.png';
 
 function Header() {
 	return (
-		<Navbar expand="md" data-bs-theme="dark" className="mt-4">
+		<Navbar expand="md" data-bs-theme="dark" className="m-2">
 			<Container>
-				<NavbarBrand className="w-25 bg-light text-center border-0 rounded-pill">
+				<NavbarBrand className="w-15 bg-light text-center border-0 rounded-pill">
 					<Image src={furnicap_logo} className="w-75" />
 				</NavbarBrand>
 				<NavbarToggle aria-controls="basic-navbar-nav" />

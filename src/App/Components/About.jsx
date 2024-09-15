@@ -30,10 +30,10 @@ function About() {
 									<h1>10+</h1>
 								</Col>
 								<Col xs="9" md="12">
-									<h5>
+									<p>
 										Lorem ipsum dolor sit amet consectetur
 										adipisicing elit. Dolores, provident.
-									</h5>
+									</p>
 								</Col>
 							</Row>
 						</Container>
@@ -45,10 +45,10 @@ function About() {
 									<h1>200+</h1>
 								</Col>
 								<Col xs="9" md="12">
-									<h5>
+									<p>
 										Lorem ipsum dolor sit amet consectetur
 										adipisicing elit. Dolores, provident.
-									</h5>
+									</p>
 								</Col>
 							</Row>
 						</Container>
@@ -60,10 +60,10 @@ function About() {
 									<h1>1200+</h1>
 								</Col>
 								<Col xs="9" md="12">
-									<h5>
+									<p>
 										Lorem ipsum dolor sit amet consectetur
 										adipisicing elit. Dolores, provident.
-									</h5>
+									</p>
 								</Col>
 							</Row>
 						</Container>

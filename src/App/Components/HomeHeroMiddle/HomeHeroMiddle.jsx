@@ -9,52 +9,48 @@ import furnicap_exceptionalservice from '../../../Assets/furnicap_exceptionalser
 function HomeHeroMiddle() {
 	return (
 		<Card
-			className={`${styles.hero} border-0 mt-5 position-relative text-light`}
+			className={`${styles.hero} border-0 mt-5 text-light d-flex align-items-center justify-content-center`}
 		>
 			<Container
 				fluid
-				className="bg-dark opacity-50 position-absolute top-50 start-50 translate-middle h-75"
+				className="bg-dark opacity-50 h-75 d-flex align-items-center justify-content-center p-5 overflow-hidden"
 			>
-				<Row
-					md="5"
-					xs="3"
-					className="h-100 p-3 d-flex align-items-center justify-content-center"
-				>
-					<Col className="text-center d-flex flex-column align-items-center justify-content-center">
-						<div className="border border-4 rounded-circle w-75 p-3">
+				<Row md="6" xs="3" className="flex-grow-1">
+					<Col className="d-flex align-items-center justify-content-center flex-column offset-md-1">
+						<div className="border border-3 rounded-circle .flex-fill p-3">
 							<Image
 								src={furnicap_quick_delivery}
-								className="w-75"
+								className="w-5r"
 							/>
 						</div>
-						<h3 className="p-4">Quick delivery</h3>
+						<p className="p-4">Quick delivery</p>
 					</Col>
-					<Col className="text-center d-flex flex-column align-items-center justify-content-center">
-						<div className="border border-4 rounded-circle w-75 p-4">
-							<Image src={furnicap_easytoshop} className="w-75" />
+					<Col className="d-flex align-items-center justify-content-center flex-column">
+						<div className="border border-3 rounded-circle .flex-fill p-4">
+							<Image src={furnicap_easytoshop} className="w-4r" />
 						</div>
-						<h3 className="p-4">Easy to shop</h3>
+						<p className="p-4">Easy to shop</p>
 					</Col>
-					<Col className="text-center d-flex flex-column align-items-center justify-content-center">
-						<div className="border border-4 rounded-circle w-75 p-4">
-							<Image src={furnicap_support} className="w-75" />
+					<Col className="d-flex align-items-center justify-content-center flex-column">
+						<div className="border border-3 rounded-circle .flex-fill p-4">
+							<Image src={furnicap_support} className="w-4r" />
 						</div>
-						<h3 className="p-4">24/7 support</h3>
+						<p className="p-4">24/7 support</p>
 					</Col>
-					<Col className="text-center d-flex flex-column align-items-center justify-content-center">
-						<div className="border border-4 rounded-circle w-75 p-4">
-							<Image src={furnicap_easyreturn} className="w-75" />
+					<Col className="d-flex align-items-center justify-content-center flex-column">
+						<div className="border border-3 rounded-circle .flex-fill p-4">
+							<Image src={furnicap_easyreturn} className="w-4r" />
 						</div>
-						<h3 className="p-4">Easy returns</h3>
+						<p className="p-4">Easy returns</p>
 					</Col>
-					<Col className="text-center d-flex flex-column align-items-center justify-content-center">
-						<div className="border border-4 rounded-circle w-75 p-4">
+					<Col className="d-flex align-items-center justify-content-center flex-column">
+						<div className="border border-3 rounded-circle .flex-fill p-4">
 							<Image
 								src={furnicap_exceptionalservice}
-								className="w-75"
+								className="w-4r"
 							/>
 						</div>
-						<h3 className="p-4">Excepional Service</h3>
+						<p className="p-4">Excepional Service</p>
 					</Col>
 				</Row>
 			</Container>

@@ -10,4 +10,27 @@ $utilities: map-merge($utilities, ("border": map-merge(map-get($utilities, "bord
       ),
     ));
 
+$utilities: map-merge($utilities,
+    ("width": map-merge(map-get($utilities, "width"),
+        (values: map-merge(map-get(map-get($utilities, "width"), "values"),
+            (5:5%, 10:10%, 15:15%, 20:20%, 30:30%, 35:35%, 40:40%, 45:45%, 80:80%, '1r':1rem, '2r':2rem,
+            '3r':3rem,
+            '4r':4rem,
+            '5r':5rem,'6r':6rem,
+            '7r':7rem,'8r':8rem,
+            ),
+          ),
+        ),
+      ),
+    ));
+
+$utilities: map-merge($utilities,
+    ("width": map-merge(map-get($utilities, "width"),
+        (responsive: 'true')
+        ),
+      ),
+    );
+
+
+
 @import 'bootstrap/scss/bootstrap';

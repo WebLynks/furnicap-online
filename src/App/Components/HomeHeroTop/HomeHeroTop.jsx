@@ -15,41 +15,44 @@ import furnicap_instagram_rounded from '../../../Assets/furnicap_instagram_round
 
 function HomeHeroTop() {
 	return (
-		<Card className={styles.hero}>
+		<Card className={`${styles.hero} border-0`}>
 			<Header />
-			<Container className="mt-5 text-light">
+			<Container className="text-light mt-4">
 				<Row>
-					<Col xs="9">
-						<CardTitle as={'h1'}>
+					<Col xs="9" md="6">
+						<div className="h1">
 							Discover comfort, style and quality craftmanship
-						</CardTitle>
-						<CardText className="mb-0 mt-4 fs-5">
+						</div>
+						<CardText className="mt-1">
 							Our furniture embodies a perfect blend of
 							functionality and aesthetic appeal ensuring that
 							every piece enhances your home.
 						</CardText>
 					</Col>
-					<Col xs="3">
-						<div className="d-flex flex-column text-end">
-							<div className="p-1">
+					<Col xs="3" md="6">
+						<Container className="d-flex flex-column text-end">
+							<Container>
 								<Image
+									style={{ width: '2rem' }}
+									className="p-1"
 									src={furnicap_facebook_rounded}
-									className="w-25"
 								/>
-							</div>
-							<div className="p-1">
+							</Container>
+							<Container>
 								<Image
+									style={{ width: '2rem' }}
+									className="p-1"
 									src={furnicap_linkedin_rounded}
-									className="w-25"
 								/>
-							</div>
-							<div className="p-1">
+							</Container>
+							<Container>
 								<Image
+									style={{ width: '2rem' }}
+									className="p-1"
 									src={furnicap_instagram_rounded}
-									className="w-25"
 								/>
-							</div>
-						</div>
+							</Container>
+						</Container>
 					</Col>
 				</Row>
 			</Container>
