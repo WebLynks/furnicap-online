@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/furnicap-online/static/css/main.0c083c6b.css",
+    "main.js": "/furnicap-online/static/js/main.71741120.js",
+    "static/media/furnicap_backdrop.png": "/furnicap-online/static/media/furnicap_backdrop.03163621d38fad8c805e.png",
+    "static/media/furnicap_frontdrop.png": "/furnicap-online/static/media/furnicap_frontdrop.7fbe0f90ba5b54adc6fa.png",
+    "static/media/furnicap_frontdrop_cropped.png": "/furnicap-online/static/media/furnicap_frontdrop_cropped.3074fd9be7aaf6c8da16.png",
+    "static/media/furnicap_whyus.png": "/furnicap-online/static/media/furnicap_whyus.a05355f4bb150b9e32a9.png",
+    "static/media/furnicap_herosection.png": "/furnicap-online/static/media/furnicap_herosection.9a51af5cae07aa623b3c.png",
+    "static/media/furnicao_logo.png": "/furnicap-online/static/media/furnicao_logo.417826e04b7165bc568f.png",
+    "static/media/furnicap_support.png": "/furnicap-online/static/media/furnicap_support.5fc25929f62062081a0f.png",
+    "static/media/furnicap_exceptionalservice.png": "/furnicap-online/static/media/furnicap_exceptionalservice.d26a3cf1c35ffa3c0bc5.png",
+    "index.html": "/furnicap-online/index.html",
+    "main.0c083c6b.css.map": "/furnicap-online/static/css/main.0c083c6b.css.map",
+    "main.71741120.js.map": "/furnicap-online/static/js/main.71741120.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0c083c6b.css",
+    "static/js/main.71741120.js"
+  ]
+}
