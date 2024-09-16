@@ -6,7 +6,7 @@ function HomeHeroTop() {
 	return (
 		<Container fluid className={`${styles.hero} position-relative`}>
 			<Container className="bg-dark opacity-75 h-85 w-85 position-absolute top-50 start-50 translate-middle border border-2 border-light rounded-5 text-light">
-				<div className="h3 p-2 w-100 w-sm-80 w-md-75">
+				<div className="h2 p-3 w-100 w-sm-80 w-md-70">
 					Craft your ideal furniture Masterpieces today
 				</div>
 			</Container>
