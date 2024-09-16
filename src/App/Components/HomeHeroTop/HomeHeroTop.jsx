@@ -1,12 +1,4 @@
-import {
-	Card,
-	CardText,
-	CardTitle,
-	Col,
-	Container,
-	Row,
-	Image,
-} from 'react-bootstrap';
+import { Card, CardText, Col, Container, Row, Image } from 'react-bootstrap';
 import styles from './HomeHeroTop.module.scss';
 import Header from '../Header/Header';
 import furnicap_facebook_rounded from '../../../Assets/furnicap_facebook_rounded.png';
@@ -19,7 +11,7 @@ function HomeHeroTop() {
 			<Header />
 			<Container className="text-light mt-4">
 				<Row>
-					<Col xs="9" md="6">
+					<Col xs="9" md="10">
 						<div className="h1">
 							Discover comfort, style and quality craftmanship
 						</div>
@@ -29,8 +21,8 @@ function HomeHeroTop() {
 							every piece enhances your home.
 						</CardText>
 					</Col>
-					<Col xs="3" md="6">
-						<Container className="d-flex flex-column text-end">
+					<Col xs="3" md="2">
+						<Container className="d-flex flex-column">
 							<Container>
 								<Image
 									style={{ width: '2rem' }}

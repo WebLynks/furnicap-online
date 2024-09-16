@@ -1,4 +1,4 @@
-import { Card, Col, Container, Image, Row } from 'react-bootstrap';
+import { Image } from 'react-bootstrap';
 import styles from './HomeHeroMiddle.module.scss';
 import furnicap_quick_delivery from '../../../Assets/furnicap_quick_delivery.png';
 import furnicap_easytoshop from '../../../Assets/furnicap_easytoshop.png';
@@ -8,53 +8,56 @@ import furnicap_exceptionalservice from '../../../Assets/furnicap_exceptionalser
 
 function HomeHeroMiddle() {
 	return (
-		<Card
+		<div
 			className={`${styles.hero} border-0 mt-5 text-light d-flex align-items-center justify-content-center`}
 		>
-			<Container
-				fluid
-				className="bg-dark opacity-50 h-75 d-flex align-items-center justify-content-center p-5 overflow-hidden"
+			<div
+				className={`bg-dark opacity-50 h-75 w-xs-90 w-sm-75 gap-3
+				 w-md-100 p-0 d-flex align-items-center justify-content-center 
+				 flex-md-row flex-column`}
 			>
-				<Row md="6" xs="3" className="flex-grow-1">
-					<Col className="d-flex align-items-center justify-content-center flex-column offset-md-1">
-						<div className="border border-3 rounded-circle .flex-fill p-3">
+				<div className="d-flex justify-content-center align-items-center gap-3">
+					<div className="d-flex justify-content-center align-items-center flex-column text-center">
+						<div className="border border-3 rounded-circle p-3">
 							<Image
 								src={furnicap_quick_delivery}
-								className="w-5r"
+								className="w-3r"
 							/>
 						</div>
-						<p className="p-4">Quick delivery</p>
-					</Col>
-					<Col className="d-flex align-items-center justify-content-center flex-column">
-						<div className="border border-3 rounded-circle .flex-fill p-4">
-							<Image src={furnicap_easytoshop} className="w-4r" />
+						<p className="p-2">Quick delivery</p>
+					</div>
+					<div className="d-flex justify-content-center align-items-center flex-column text-center">
+						<div className="border border-3 rounded-circle p-3">
+							<Image src={furnicap_easytoshop} className="w-3r" />
 						</div>
-						<p className="p-4">Easy to shop</p>
-					</Col>
-					<Col className="d-flex align-items-center justify-content-center flex-column">
-						<div className="border border-3 rounded-circle .flex-fill p-4">
-							<Image src={furnicap_support} className="w-4r" />
+						<p className="p-2">Easy to shop</p>
+					</div>
+					<div className="d-flex justify-content-center align-items-center flex-column text-center">
+						<div className="border border-3 rounded-circle p-3">
+							<Image src={furnicap_support} className="w-3r" />
 						</div>
-						<p className="p-4">24/7 support</p>
-					</Col>
-					<Col className="d-flex align-items-center justify-content-center flex-column">
-						<div className="border border-3 rounded-circle .flex-fill p-4">
-							<Image src={furnicap_easyreturn} className="w-4r" />
+						<p className="p-2">24/7 support</p>
+					</div>
+				</div>
+				<div className="d-flex justify-content-center align-items-center gap-3">
+					<div className="d-flex justify-content-center align-items-center flex-column text-center">
+						<div className="border border-3 rounded-circle p-3">
+							<Image src={furnicap_easyreturn} className="w-3r" />
 						</div>
-						<p className="p-4">Easy returns</p>
-					</Col>
-					<Col className="d-flex align-items-center justify-content-center flex-column">
-						<div className="border border-3 rounded-circle .flex-fill p-4">
+						<p className="p-2">Easy returns</p>
+					</div>
+					<div className="d-flex justify-content-center align-items-center flex-column">
+						<div className="border border-3 rounded-circle p-3">
 							<Image
 								src={furnicap_exceptionalservice}
-								className="w-4r"
+								className="w-3r"
 							/>
 						</div>
-						<p className="p-4">Excepional Service</p>
-					</Col>
-				</Row>
-			</Container>
-		</Card>
+						<p className="p-2">Excepional service</p>
+					</div>
+				</div>
+			</div>
+		</div>
 	);
 }
 

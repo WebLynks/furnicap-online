@@ -5,32 +5,259 @@
 @import 'bootstrap/scss/maps';
 @import 'bootstrap/scss/utilities';
 
-$utilities: map-merge($utilities, ("border": map-merge(map-get($utilities, "border"),
-        (responsive: true),
-      ),
-    ));
+$utilities: map-merge(
+	$utilities,
+	(
+		'border':
+			map-merge(
+				map-get($utilities, 'border'),
+				(
+					responsive: true,
+				)
+			),
+	)
+);
 
-$utilities: map-merge($utilities,
-    ("width": map-merge(map-get($utilities, "width"),
-        (values: map-merge(map-get(map-get($utilities, "width"), "values"),
-            (5:5%, 10:10%, 15:15%, 20:20%, 30:30%, 35:35%, 40:40%, 45:45%, 80:80%, '1r':1rem, '2r':2rem,
-            '3r':3rem,
-            '4r':4rem,
-            '5r':5rem,'6r':6rem,
-            '7r':7rem,'8r':8rem,
-            ),
-          ),
-        ),
-      ),
-    ));
+$utilities: map-merge(
+	$utilities,
+	(
+		'width':
+			map-merge(
+				map-get($utilities, 'width'),
+				(
+					values:
+						map-merge(
+							map-get(map-get($utilities, 'width'), 'values'),
+							(
+								5: 5%,
+								10: 10%,
+								15: 15%,
+								20: 20%,
+								30: 30%,
+								35: 35%,
+								40: 40%,
+								45: 45%,
+								60: 60%,
+								70: 70%,
+								80: 80%,
+								85: 85%,
+								'1r': 1rem,
+								'2r': 2rem,
+								'3r': 3rem,
+								'4r': 4rem,
+								'5r': 5rem,
+								'6r': 6rem,
+								'7r': 7rem,
+								'8r': 8rem,
+							)
+						),
+				)
+			),
+	)
+);
 
-$utilities: map-merge($utilities,
-    ("width": map-merge(map-get($utilities, "width"),
-        (responsive: 'true')
-        ),
-      ),
-    );
+$utilities: map-merge(
+	$utilities,
+	(
+		'width':
+			map-merge(
+				map-get($utilities, 'width'),
+				(
+					responsive: 'true',
+				)
+			),
+	)
+);
 
+$utilities: map-merge(
+	$utilities,
+	(
+		'height':
+			map-merge(
+				map-get($utilities, 'height'),
+				(
+					values:
+						map-merge(
+							map-get(map-get($utilities, 'height'), 'values'),
+							(
+								5: 5%,
+								10: 10%,
+								15: 15%,
+								20: 20%,
+								30: 30%,
+								35: 35%,
+								40: 40%,
+								45: 45%,
+								60: 60%,
+								70: 70%,
+								80: 80%,
+								85: 85%,
+								90: 90%,
+								'1r': 1rem,
+								'2r': 2rem,
+								'3r': 3rem,
+								'4r': 4rem,
+								'5r': 5rem,
+								'6r': 6rem,
+								'7r': 7rem,
+								'8r': 8rem,
+							)
+						),
+				)
+			),
+	)
+);
 
+$utilities: map-merge(
+	$utilities,
+	(
+		'height':
+			map-merge(
+				map-get($utilities, 'height'),
+				(
+					responsive: 'true',
+				)
+			),
+	)
+);
+
+$utilities: map-merge(
+	$utilities,
+	(
+		'rounded':
+			map-merge(
+				map-get($utilities, 'rounded'),
+				(
+					responsive: 'true',
+				)
+			),
+	)
+);
+
+$utilities: map-merge(
+	$utilities,
+	(
+		'start':
+			map-merge(
+				map-get($utilities, 'start'),
+				(
+					responsive: 'true',
+				)
+			),
+	)
+);
+
+$utilities: map-merge(
+	$utilities,
+	(
+		'end':
+			map-merge(
+				map-get($utilities, 'end'),
+				(
+					responsive: 'true',
+				)
+			),
+	)
+);
+
+$utilities: map-merge(
+	$utilities,
+	(
+		'start':
+			map-merge(
+				map-get($utilities, 'start'),
+				(
+					values:
+						map-merge(
+							map-get(map-get($utilities, 'start'), 'values'),
+							(
+								auto: auto,
+							)
+						),
+				)
+			),
+	)
+);
+
+$utilities: map-merge(
+	$utilities,
+	(
+		'end':
+			map-merge(
+				map-get($utilities, 'end'),
+				(
+					values:
+						map-merge(
+							map-get(map-get($utilities, 'end'), 'values'),
+							(
+								auto: auto,
+							)
+						),
+				)
+			),
+	)
+);
+
+$utilities: map-merge(
+	$utilities,
+	(
+		'min-viewport-height':
+			map-merge(
+				map-get($utilities, 'min-viewport-height'),
+				(
+					values:
+						map-merge(
+							map-get(
+								map-get($utilities, 'min-viewport-height'),
+								'values'
+							),
+							(
+								10: 10vh,
+								20: 20vh,
+								30: 30vh,
+								40: 40vh,
+								50: 50vh,
+								60: 60vh,
+								70: 70vh,
+								80: 80vh,
+								90: 90vh,
+							)
+						),
+				)
+			),
+	)
+);
+
+$utilities: map-merge(
+	$utilities,
+	(
+		'min-viewport-height':
+			map-merge(
+				map-get($utilities, 'min-viewport-height'),
+				(
+					responsive: 'true',
+				)
+			),
+	)
+);
+
+$utilities: map-merge(
+	$utilities,
+	(
+		'bottom':
+			map-merge(
+				map-get($utilities, 'bottom'),
+				(
+					values:
+						map-merge(
+							map-get(map-get($utilities, 'bottom'), 'values'),
+							(
+								5: 5%,
+							)
+						),
+				)
+			),
+	)
+);
 
 @import 'bootstrap/scss/bootstrap';

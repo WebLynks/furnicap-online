@@ -5,10 +5,10 @@ function About() {
 		<section id="about">
 			<Container className="mt-5">
 				<Row>
-					<Col md="3">
+					<Col md="4">
 						<h1>ABOUT US</h1>
 					</Col>
-					<Col md="9" className="mt-3 mt-md-0">
+					<Col md="8" className="mt-3 mt-md-0">
 						<p>
 							Lorem ipsum dolor sit amet, consectetur adipisicing
 							elit. Suscipit obcaecati id a dolores. Quaerat porro
