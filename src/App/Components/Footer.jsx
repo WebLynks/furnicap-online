@@ -1,53 +1,120 @@
 import { Col, Container, Image, Row } from 'react-bootstrap';
 import furnicap_logo from '../../Assets/furnicao_logo.png';
+import furnicap_facebook_rounded from '../../Assets/furnicap_facebook_rounded.png';
+import furnicap_linkedin_rounded from '../../Assets/furnicap_linkedin_rounded.png';
+import furnicap_instagram_rounded from '../../Assets/furnicap_instagram_rounded.png';
+import furnicap_twitter from '../../Assets/furnicap_twitter.png';
 
 function Footer() {
 	return (
 		<>
 			<Container fluid className="bg-dark text-light">
-				<Container className="pt-5 pb-5">
-					<Row md="4" className="g-5">
-						<Col>
-							<div className="w-25 bg-light text-center border-0 rounded-pill">
-								<Image src={furnicap_logo} className="w-75" />
+				<Container className="pt-4 pb-4">
+					<Row className="g-2">
+						<Col xs="12" md="3" lg="4">
+							<div className="w-8r bg-light text-center border-0 rounded-pill px-3 py-1">
+								<Image fluid src={furnicap_logo} />
 							</div>
-							<p className="mt-3 pe-3">
+							<p className="mt-3 pe-2">
 								Lorem ipsum dolor sit amet consectetur
 								adipisicing elit. Placeat veniam reprehenderit
 								quaerat laudantium rerum officiis?
 							</p>
+							<Container className="d-flex flex-row p-0 gap-1">
+								<Image
+									fluid
+									className="p-1 w-2r"
+									src={furnicap_facebook_rounded}
+								/>
+								<Image
+									fluid
+									className="p-1 w-2r"
+									src={furnicap_linkedin_rounded}
+								/>
+								<Image
+									fluid
+									className="p-1 w-2r"
+									src={furnicap_instagram_rounded}
+								/>
+								<Image
+									fluid
+									className="p-1 w-2r rounded-circle"
+									src={furnicap_twitter}
+								/>
+							</Container>
 						</Col>
-						<Col>
-							<h4>Quick Links</h4>
-							<p>About us</p>
-							<p>Our shop</p>
-							<p>Who we are</p>
-							<p>What we offer</p>
-							<p>Reviews</p>
-							<p>FAQ</p>
+						<Col xs="12" md="2">
+							<div className="h4">Quick links</div>
+							<div>About us</div>
+							<div>Our shop</div>
+							<div>Who we are</div>
+							<div>What we offer</div>
+							<div>Reviews</div>
+							<div>FAQ</div>
 						</Col>
-						<Col>
-							<h4>Important Links</h4>
-							<p>Contact us</p>
-							<p>Return policy</p>
-							<p>Privacy policy</p>
-							<p>Terms and conditions</p>
+						<Col xs="12" md="2" lg="3">
+							<div className="h4">Important links</div>
+							<div>Contact us</div>
+							<div>Return policy</div>
+							<div>Privacy policy</div>
+							<div>Terms and conditions</div>
 						</Col>
-						<Col>
-							<h4>Social Network</h4>
+						<Col xs="12" md="4" lg="3">
+							<div className="h4">Get in touch</div>
+							<div>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									width="16"
+									height="16"
+									fill="currentColor"
+									className="bi bi-envelope"
+									viewBox="0 0 16 16"
+								>
+									<path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z" />
+								</svg>
+								<span className="ms-3">furnicap@gmail.com</span>
+							</div>
+							<div>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									width="16"
+									height="16"
+									fill="currentColor"
+									className="bi bi-person-square"
+									viewBox="0 0 16 16"
+								>
+									<path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
+									<path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm12 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1v-1c0-1-1-4-6-4s-6 3-6 4v1a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1z" />
+								</svg>
+								<span className="ms-3">9899654321</span>
+							</div>
+							<div>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									width="16"
+									height="16"
+									fill="currentColor"
+									className="bi bi-clock"
+									viewBox="0 0 16 16"
+								>
+									<path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71z" />
+									<path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0" />
+								</svg>
+								<span className="ms-3">
+									Monday-Friday, 8am-8pm
+								</span>
+							</div>
 						</Col>
 					</Row>
 				</Container>
 			</Container>
 			<Container>
-				<div className="d-flex flex-row">
-					<div className="p-2 me-auto">
-						Copyright by Furnicap - All rights reserved
-					</div>
-					<div className="p-2 ms-auto">
+				<Row className="justify-content-end">
+					<Col>Copyright by Furnicap - All rights reserved</Col>
+					<Col className="text-end d-none d-md-block">
 						Privacy policy | Cookie policy
-					</div>
-				</div>
+					</Col>
+				</Row>
 			</Container>
 		</>
 	);

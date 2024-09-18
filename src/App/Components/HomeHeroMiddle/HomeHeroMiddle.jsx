@@ -12,29 +12,35 @@ function HomeHeroMiddle() {
 			className={`${styles.hero} border-0 mt-5 text-light d-flex align-items-center justify-content-center`}
 		>
 			<div
-				className={`bg-dark opacity-50 h-75 w-xs-90 w-sm-75 gap-3
+				className={`bg-dark opacity-50 h-80 w-xs-90 w-sm-75 gap-3
 				 w-md-100 p-0 d-flex align-items-center justify-content-center 
 				 flex-md-row flex-column`}
 			>
-				<div className="d-flex justify-content-center align-items-center gap-3">
+				<div className="d-flex justify-content-center align-items-center gap-3 pt-4 pt-md-0">
 					<div className="d-flex justify-content-center align-items-center flex-column text-center">
 						<div className="border border-3 rounded-circle p-3">
 							<Image
 								src={furnicap_quick_delivery}
-								className="w-3r"
+								className="w-2r w-md-3r"
 							/>
 						</div>
 						<p className="p-2">Quick delivery</p>
 					</div>
 					<div className="d-flex justify-content-center align-items-center flex-column text-center">
 						<div className="border border-3 rounded-circle p-3">
-							<Image src={furnicap_easytoshop} className="w-3r" />
+							<Image
+								src={furnicap_easytoshop}
+								className="w-2r w-md-3r"
+							/>
 						</div>
 						<p className="p-2">Easy to shop</p>
 					</div>
 					<div className="d-flex justify-content-center align-items-center flex-column text-center">
 						<div className="border border-3 rounded-circle p-3">
-							<Image src={furnicap_support} className="w-3r" />
+							<Image
+								src={furnicap_support}
+								className="w-2r w-md-3r"
+							/>
 						</div>
 						<p className="p-2">24/7 support</p>
 					</div>
@@ -42,7 +48,10 @@ function HomeHeroMiddle() {
 				<div className="d-flex justify-content-center align-items-center gap-3">
 					<div className="d-flex justify-content-center align-items-center flex-column text-center">
 						<div className="border border-3 rounded-circle p-3">
-							<Image src={furnicap_easyreturn} className="w-3r" />
+							<Image
+								src={furnicap_easyreturn}
+								className="w-2r w-md-3r"
+							/>
 						</div>
 						<p className="p-2">Easy returns</p>
 					</div>
@@ -50,7 +59,7 @@ function HomeHeroMiddle() {
 						<div className="border border-3 rounded-circle p-3">
 							<Image
 								src={furnicap_exceptionalservice}
-								className="w-3r"
+								className="w-2r w-md-3r"
 							/>
 						</div>
 						<p className="p-2">Excepional service</p>

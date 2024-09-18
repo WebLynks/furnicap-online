@@ -12,7 +12,7 @@ function HomeHeroTop() {
 			</Container>
 			<Image
 				src={furnicap_frontdrop_cropped}
-				className="z-1 position-absolute bottom-5 end-0 h-50 w-75"
+				className="z-1 position-absolute bottom-5 bottom-md-0 end-0 h-50 h-sm-55 h-md-60 h-lg-65 w-75"
 			/>
 		</Container>
 	);

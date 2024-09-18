@@ -16,8 +16,8 @@ function Header() {
 	return (
 		<Navbar expand="md" data-bs-theme="dark" className="m-2">
 			<Container>
-				<NavbarBrand className="w-15 bg-light text-center border-0 rounded-pill">
-					<Image src={furnicap_logo} className="w-75" />
+				<NavbarBrand className="w-8r bg-light text-center border-0 rounded-pill px-3 py-0">
+					<Image fluid src={furnicap_logo} />
 				</NavbarBrand>
 				<NavbarToggle aria-controls="basic-navbar-nav" />
 				<NavbarCollapse

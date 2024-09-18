@@ -11,7 +11,7 @@ function HomeHeroTop() {
 			<Header />
 			<Container className="text-light mt-4">
 				<Row>
-					<Col xs="9" md="10">
+					<Col xs="12" md="10">
 						<div className="h1">
 							Discover comfort, style and quality craftmanship
 						</div>
@@ -21,26 +21,26 @@ function HomeHeroTop() {
 							every piece enhances your home.
 						</CardText>
 					</Col>
-					<Col xs="3" md="2">
+					<Col className="d-none d-md-block" md="2">
 						<Container className="d-flex flex-column">
 							<Container>
 								<Image
-									style={{ width: '2rem' }}
-									className="p-1"
+									fluid
+									className="p-1 w-2r"
 									src={furnicap_facebook_rounded}
 								/>
 							</Container>
 							<Container>
 								<Image
-									style={{ width: '2rem' }}
-									className="p-1"
+									fluid
+									className="p-1 w-2r"
 									src={furnicap_linkedin_rounded}
 								/>
 							</Container>
 							<Container>
 								<Image
-									style={{ width: '2rem' }}
-									className="p-1"
+									fluid
+									className="p-1 w-2r"
 									src={furnicap_instagram_rounded}
 								/>
 							</Container>
