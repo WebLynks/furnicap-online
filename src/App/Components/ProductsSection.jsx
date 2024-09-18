@@ -7,7 +7,7 @@ function ProductsSection() {
 			<Container className="mt-5">
 				<div className="h6 text-uppercase">Products</div>
 				<div className="h1 text-uppercase">Browse our selection</div>
-				<Container className="mt-4">
+				<Container className="mt-4 p-0">
 					<Row xs="2" className="g-0 g-sm-2 g-md-3 g-lg-4">
 						<Col>
 							<ProductCard />

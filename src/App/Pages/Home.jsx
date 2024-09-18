@@ -5,6 +5,7 @@ import HomeHeroTop from '../Components/HomeHeroTop/HomeHeroTop';
 import HeroBottom from '../Components/HeroBottom/HeroBottom';
 import ProductsSection from '../Components/ProductsSection';
 import CategorySection from '../Components/CategorySection';
+import TestimonialsSection from '../Components/TestimonialsSection';
 
 function Home() {
 	return (
@@ -14,6 +15,7 @@ function Home() {
 			<HomeHeroMiddle />
 			<ProductsSection />
 			<CategorySection />
+			<TestimonialsSection />
 			<HeroBottom />
 			<Footer />
 		</>
