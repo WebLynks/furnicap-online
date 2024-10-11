@@ -8,7 +8,7 @@ import furnicap_instagram_rounded from '../../../Assets/furnicap_instagram_round
 function HomeHeroTop() {
 	return (
 		<Card className={`${styles.hero} border-0`}>
-			<Header />
+			<Header theme="dark" />
 			<Container className="text-light mt-4">
 				<Row>
 					<Col xs="12" md="10">

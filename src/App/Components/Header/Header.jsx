@@ -12,11 +12,15 @@ import {
 import { NavLink as Link } from 'react-router-dom';
 import furnicap_logo from '../../../Assets/furnicao_logo.png';
 
-function Header() {
+function Header({ theme }) {
 	return (
-		<Navbar expand="md" data-bs-theme="dark" className="m-2">
+		<Navbar expand="md" data-bs-theme={theme} className="m-2">
 			<Container>
-				<NavbarBrand className="w-8r bg-light text-center border-0 rounded-pill px-3 py-0">
+				<NavbarBrand
+					className={`w-8r bg-light text-center border border-${
+						theme === 'light' ? 'dark' : 'light'
+					} rounded-pill px-3 py-0`}
+				>
 					<Image fluid src={furnicap_logo} />
 				</NavbarBrand>
 				<NavbarToggle aria-controls="basic-navbar-nav" />
@@ -27,21 +31,27 @@ function Header() {
 					<Nav
 						fill
 						className="border-md rounded-pill"
-						data-bs-theme="light"
+						data-bs-theme={theme === 'light' ? 'dark' : 'light'}
 					>
 						<NavItem>
 							<NavLink as={Link} to="/">
-								Home
+								<span className="h6">Home</span>
 							</NavLink>
 						</NavItem>
 						<NavItem>
-							<NavLink href="#products">Products</NavLink>
+							<NavLink href="#products">
+								<span className="h6">Products</span>
+							</NavLink>
 						</NavItem>
 						<NavItem>
-							<NavLink href="#about">About Us</NavLink>
+							<NavLink href="#about">
+								<span className="h6">About Us</span>
+							</NavLink>
 						</NavItem>
 						<NavItem>
-							<NavLink href="#contact">Contact</NavLink>
+							<NavLink href="#contact">
+								<span className="h6">Contact</span>
+							</NavLink>
 						</NavItem>
 					</Nav>
 				</NavbarCollapse>
