@@ -1,7 +1,10 @@
-import { Col, Container, Row } from 'react-bootstrap';
+import { Container, Row } from 'react-bootstrap';
 import ProductCard from './ProductCard';
+import { getProducts } from '../../Data/data';
 
 function ProductsSection() {
+	const products = getProducts();
+
 	return (
 		<section id="products">
 			<Container className="mt-5">
@@ -9,24 +12,9 @@ function ProductsSection() {
 				<div className="h1 text-uppercase">Browse our selection</div>
 				<Container className="mt-4 p-0">
 					<Row xs="2" className="g-0 g-sm-2 g-md-3 g-lg-4">
-						<Col>
-							<ProductCard />
-						</Col>
-						<Col>
-							<ProductCard />
-						</Col>
-						<Col>
-							<ProductCard />
-						</Col>
-						<Col>
-							<ProductCard />
-						</Col>
-						<Col>
-							<ProductCard />
-						</Col>
-						<Col>
-							<ProductCard />
-						</Col>
+						{products.map((product) => (
+							<ProductCard key={product.name} product={product} />
+						))}
 					</Row>
 				</Container>
 			</Container>

@@ -1,23 +1,37 @@
-import { Card, CardSubtitle, CardTitle, Image } from 'react-bootstrap';
-import furnicap_frontdrop from '../../Assets/furnicap_frontdrop.png';
+import { Card, CardSubtitle, CardTitle, Col, Image } from 'react-bootstrap';
+import useImage from '../useImage';
+import { Link } from 'react-router-dom';
 
-function ProductCard({
-	name = 'Luxury Leather Sofa',
-	category = 'Sofa',
-	price = '16000',
-}) {
+function ProductCard({ product }) {
+	const { loading, error, image } = useImage(product.image, 'png');
+
+	if (error) return `${product.image} image`;
+
 	return (
-		<Card
-			text="dark"
-			className="bg-dark-subtle p-3 border-dark-subtle border-sm-0 rounded-0 rounded-sm-2"
-		>
-			<CardTitle>{name}</CardTitle>
-			<Image fluid className="p-2" src={furnicap_frontdrop} />
-			<div className="d-flex justify-content-between">
-				<CardSubtitle>{category}</CardSubtitle>
-				<CardSubtitle>{`₹${price}`}</CardSubtitle>
-			</div>
-		</Card>
+		<Col>
+			<Link
+				to={`/products/${product.name}`}
+				style={{ textDecoration: 'none', color: 'inherit' }}
+			>
+				<Card
+					text="dark"
+					className="bg-dark-subtle p-3 border-dark-subtle border-sm-0 rounded-0 rounded-sm-2 h-100"
+				>
+					<CardTitle>{product.name}</CardTitle>
+					{loading ? (
+						`${product.image} image`
+					) : (
+						<Image fluid className="p-2 h-100" src={image} />
+					)}
+					<div className="d-flex justify-content-between">
+						<CardSubtitle as="p">{product.category}</CardSubtitle>
+						{product.price ? (
+							<CardSubtitle as="p">{`₹${product.price}`}</CardSubtitle>
+						) : null}
+					</div>
+				</Card>
+			</Link>
+		</Col>
 	);
 }
 

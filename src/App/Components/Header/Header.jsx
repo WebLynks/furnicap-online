@@ -39,17 +39,17 @@ function Header({ theme }) {
 							</NavLink>
 						</NavItem>
 						<NavItem>
-							<NavLink href="#products">
+							<NavLink href="/furnicap-online#products">
 								<span className="h6">Products</span>
 							</NavLink>
 						</NavItem>
 						<NavItem>
-							<NavLink href="#about">
+							<NavLink href="/furnicap-online#about">
 								<span className="h6">About Us</span>
 							</NavLink>
 						</NavItem>
 						<NavItem>
-							<NavLink href="#contact">
+							<NavLink href="/furnicap-online#contact">
 								<span className="h6">Contact</span>
 							</NavLink>
 						</NavItem>

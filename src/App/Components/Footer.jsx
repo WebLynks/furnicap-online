@@ -16,9 +16,9 @@ function Footer() {
 								<Image fluid src={furnicap_logo} />
 							</div>
 							<p className="mt-3 pe-2">
-								Lorem ipsum dolor sit amet consectetur
-								adipisicing elit. Placeat veniam reprehenderit
-								quaerat laudantium rerum officiis?
+								Furnicap is an innovative e-commerce platform
+								specializing in high-quality furniture and home
+								decor.
 							</p>
 							<Container className="d-flex flex-row p-0 gap-1">
 								<Image

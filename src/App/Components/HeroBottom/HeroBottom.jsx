@@ -9,6 +9,11 @@ function HomeHeroTop() {
 				<div className="h2 p-3 w-100 w-sm-80 w-md-70">
 					Craft your ideal furniture Masterpieces today
 				</div>
+				<p className="p-3 w-100 w-sm-80 w-md-70">
+					Our furniture embodies a perfect blend of functionality and
+					aesthetic appeal ensuring that every piece
+					enhances your home.
+				</p>
 			</Container>
 			<Image
 				src={furnicap_frontdrop_cropped}
