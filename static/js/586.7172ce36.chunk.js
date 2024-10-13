@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkfurnicap_online=self.webpackChunkfurnicap_online||[]).push([[586],{9586:(e,n,p)=>{e.exports=p.p+"static/media/computer_table.b45f0535af1518300689.png"}}]);

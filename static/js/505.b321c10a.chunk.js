@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkfurnicap_online=self.webpackChunkfurnicap_online||[]).push([[505],{7505:(e,i,n)=>{e.exports=n.p+"static/media/testimonial_3.91441db697dfe8601788.jpg"}}]);

@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkfurnicap_online=self.webpackChunkfurnicap_online||[]).push([[219],{1219:(e,n,a)=>{e.exports=a.p+"static/media/furnicap_whyus.a05355f4bb150b9e32a9.png"}}]);

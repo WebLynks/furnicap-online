@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkfurnicap_online=self.webpackChunkfurnicap_online||[]).push([[848],{6848:(e,i,n)=>{e.exports=n.p+"static/media/work_station_white.56c6dbe7a882d6224e30.jpg"}}]);
