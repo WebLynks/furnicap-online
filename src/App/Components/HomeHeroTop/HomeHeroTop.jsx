@@ -7,21 +7,24 @@ import furnicap_instagram_rounded from '../../../Assets/furnicap_instagram_round
 
 function HomeHeroTop() {
 	return (
-		<Card className={`${styles.hero} border-0`}>
-			<Header theme="dark" />
-			<Container className="text-light mt-4">
+		<Card className={`${styles.hero} border-0 mb-5`}>
+			<Header theme="light" />
+			<Container className="text-dark mt-4">
 				<Row>
-					<Col xs="12" md="10">
-						<div className="h1">
+					<Col xs="12" md="9">
+						<div className="fs-3r fs-xxl-4r fw-bold lh-1">
 							Discover comfort, style and quality craftmanship
 						</div>
-						<CardText className="mt-1">
+						<CardText className="mt-4 fs-6 fs-md-5">
 							Our furniture embodies a perfect blend of
 							functionality and aesthetic appeal ensuring that
 							every piece enhances your home.
 						</CardText>
 					</Col>
-					<Col className="d-none d-md-block" md="2">
+					<Col
+						className="d-none d-md-block"
+						md={{ span: 1, offset: 2 }}
+					>
 						<Container className="d-flex flex-column">
 							<Container>
 								<Image

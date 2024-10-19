@@ -19,11 +19,11 @@ function TestimonialCard({ testimonial }) {
 						alt={`${testimonial.image} image`}
 					/>
 				)}
-				<p className="mt-4">{testimonial.date}</p>
-				<p>
+				<p className="mt-4 fs-6 fs-md-5">{testimonial.date}</p>
+				<p className="fs-6 fs-md-5">
 					<q>{testimonial.quote}</q>
 				</p>
-				<p>{`- ${testimonial.name}`}</p>
+				<p className="fs-6 fs-md-5">{`- ${testimonial.name}`}</p>
 			</Card>
 		</Col>
 	);

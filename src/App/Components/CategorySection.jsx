@@ -7,11 +7,13 @@ function ProductsSection() {
 
 	return (
 		<section id="category">
-			<Container className="mt-5">
-				<div className="h6 text-uppercase">Category</div>
-				<div className="h1 text-uppercase">Choose from our range</div>
-				<Container className="mt-4">
-					<Row xs="1" md="2" className="g-2">
+			<Container className="mt-5 mb-5">
+				<div className="fs-6 fs-md-5 text-uppercase">Category</div>
+				<div className="fs-3r fs-xxl-4r fw-bold lh-1 text-uppercase mb-5">
+					Choose from our range
+				</div>
+				<Container className="mt-5">
+					<Row xs="1" md="2" className="g-3">
 						{categories.map((category) => (
 							<CategoryCard
 								key={category.name}

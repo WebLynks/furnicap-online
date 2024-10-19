@@ -17,9 +17,7 @@ function Header({ theme }) {
 		<Navbar expand="md" data-bs-theme={theme} className="m-2">
 			<Container>
 				<NavbarBrand
-					className={`w-8r bg-light text-center border border-${
-						theme === 'light' ? 'dark' : 'light'
-					} rounded-pill px-3 py-0`}
+					className={`w-13r bg-light text-center border rounded-pill px-4 py-2`}
 				>
 					<Image fluid src={furnicap_logo} />
 				</NavbarBrand>
@@ -30,27 +28,33 @@ function Header({ theme }) {
 				>
 					<Nav
 						fill
-						className="border-md rounded-pill"
+						className="border-md rounded-pill px-lg-4 px-md-3"
 						data-bs-theme={theme === 'light' ? 'dark' : 'light'}
 					>
 						<NavItem>
 							<NavLink as={Link} to="/">
-								<span className="h6">Home</span>
+								<span className="h6 px-lg-3 px-md-2">Home</span>
 							</NavLink>
 						</NavItem>
 						<NavItem>
 							<NavLink href="/furnicap-online#products">
-								<span className="h6">Products</span>
+								<span className="h6 px-lg-3 px-md-2">
+									Products
+								</span>
 							</NavLink>
 						</NavItem>
 						<NavItem>
 							<NavLink href="/furnicap-online#about">
-								<span className="h6">About Us</span>
+								<span className="h6 px-lg-3 px-md-2">
+									About Us
+								</span>
 							</NavLink>
 						</NavItem>
 						<NavItem>
 							<NavLink href="/furnicap-online#contact">
-								<span className="h6">Contact</span>
+								<span className="h6 px-lg-3 px-md-2">
+									Contact
+								</span>
 							</NavLink>
 						</NavItem>
 					</Nav>

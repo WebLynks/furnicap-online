@@ -1,6 +1,12 @@
 .hero {
-	height: 60vh;
+	height: 100vh;
 	background-image: url('../../../Assets/furnicap_backdrop.png');
 	background-size: cover;
 	background-position: center left;
+}
+
+@media only screen and (max-width: 575px) {
+	.hero {
+		height: 60vh;
+	}
 }

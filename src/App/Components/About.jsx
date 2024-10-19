@@ -3,12 +3,14 @@ import { Col, Container, Row } from 'react-bootstrap';
 function About() {
 	return (
 		<section id="about">
-			<Container className="mt-5">
+			<Container className="mt-5 mb-5">
 				<Row>
 					<Col md="4">
-						<h1>ABOUT US</h1>
+						<div className="fs-3r fs-xxl-4r fw-bold lh-1">
+							ABOUT US
+						</div>
 					</Col>
-					<Col md="8" className="mt-3 mt-md-0">
+					<Col md="8" className="mt-3 mt-md-0 fs-6 fs-md-5">
 						<p>
 							Singhania Enterprises, operating under the brand
 							name Furnicap, offers innovative, ergonomic, and
@@ -26,14 +28,16 @@ function About() {
 							aesthetically pleasing designs.
 						</p>
 					</Col>
-					<Col md="4" className="mt-3">
+					<Col md="4" className="mt-5">
 						<Container className="text-md-center">
 							<Row>
 								<Col xs="3" md="12">
-									<h1>10+</h1>
+									<div className="fs-3r fs-xxl-4r fw-bold lh-1">
+										10+
+									</div>
 								</Col>
 								<Col xs="9" md="12">
-									<p>
+									<p className="fs-6 fs-md-5">
 										Over 10 years of expertise delivering
 										quality and innovation.
 									</p>
@@ -41,14 +45,16 @@ function About() {
 							</Row>
 						</Container>
 					</Col>
-					<Col md="4" className="mt-3">
+					<Col md="4" className="mt-5">
 						<Container className="text-md-center">
 							<Row>
 								<Col xs="3" md="12">
-									<h1>200+</h1>
+									<div className="fs-3r fs-xxl-4r fw-bold lh-1">
+										200+
+									</div>
 								</Col>
 								<Col xs="9" md="12">
-									<p>
+									<p className="fs-6 fs-md-5">
 										Proudly serving over 200 clients with
 										dedication and excellence.
 									</p>
@@ -56,14 +62,16 @@ function About() {
 							</Row>
 						</Container>
 					</Col>
-					<Col md="4" className="mt-3">
+					<Col md="4" className="mt-5">
 						<Container className="text-md-center">
 							<Row>
 								<Col xs="3" md="12">
-									<h1>1200+</h1>
+									<div className="fs-3r fs-xxl-4r fw-bold lh-1">
+										12k+
+									</div>
 								</Col>
 								<Col xs="9" md="12">
-									<p>
+									<p className="fs-6 fs-md-5">
 										Successfully completed over 12,000
 										deliveries with precision and care.
 									</p>

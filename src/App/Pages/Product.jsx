@@ -13,7 +13,7 @@ function Product() {
 	return (
 		<>
 			<Header theme="light" />
-			<Container>
+			<Container className="mt-5 mb-5">
 				<Row>
 					<Col xs={12} md={7}>
 						<ImageGallery images={images} />

@@ -18,7 +18,7 @@ function ProductCard({ category }) {
 					/>
 				)}
 				<CardImgOverlay className="m-3">
-					<Button className="position-absolute start-auto end-0 start-md-0 end-md-auto border-dark border-2 bottom-0 rounded-pill bg-light text-dark">
+					<Button className="position-absolute start-auto end-0 start-md-0 end-md-auto border-dark border-2 bottom-0 rounded-pill bg-light text-dark fs-6 fs-md-5 px-4">
 						{category.name}
 					</Button>
 				</CardImgOverlay>

@@ -9,7 +9,7 @@ function Footer() {
 	return (
 		<>
 			<Container fluid className="bg-dark text-light">
-				<Container className="pt-4 pb-4">
+				<Container className="pt-5 pb-5">
 					<Row className="g-2">
 						<Col xs="12" md="3" lg="4">
 							<div className="w-8r bg-light text-center border-0 rounded-pill px-3 py-1">
@@ -111,8 +111,9 @@ function Footer() {
 			<Container>
 				<Row className="justify-content-end">
 					<Col>Copyright by Furnicap - All rights reserved</Col>
-					<Col className="text-end d-none d-md-block">
-						Privacy policy | Cookie policy
+					<Col className="text-end">
+						Designed and Developed by{' '}
+						<i className="fw-bold">WebLynks</i>
 					</Col>
 				</Row>
 			</Container>

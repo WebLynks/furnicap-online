@@ -15,18 +15,25 @@ function ProductCard({ product }) {
 			>
 				<Card
 					text="dark"
-					className="bg-dark-subtle p-3 border-dark-subtle border-sm-0 rounded-0 rounded-sm-2 h-100"
+					className="fc-bg-grey p-4 border-dark-subtle border-sm-0 rounded-0 rounded-sm-2 h-100"
 				>
-					<CardTitle>{product.name}</CardTitle>
+					<CardTitle className="fs-6 fs-md-5 fw-bold">
+						{product.name}
+					</CardTitle>
 					{loading ? (
 						`${product.image} image`
 					) : (
 						<Image fluid className="p-2 h-100" src={image} />
 					)}
 					<div className="d-flex justify-content-between">
-						<CardSubtitle as="p">{product.category}</CardSubtitle>
+						<CardSubtitle as="p" className="fs-6 fs-md-5">
+							{product.category}
+						</CardSubtitle>
 						{product.price ? (
-							<CardSubtitle as="p">{`₹${product.price}`}</CardSubtitle>
+							<CardSubtitle
+								as="p"
+								className="fs-6 fs-md-5"
+							>{`₹${product.price}`}</CardSubtitle>
 						) : null}
 					</div>
 				</Card>
