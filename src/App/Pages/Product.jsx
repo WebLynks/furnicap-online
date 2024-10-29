@@ -3,7 +3,7 @@ import Footer from '../Components/Footer';
 import Header from '../Components/Header/Header';
 import ImageGallery from '../Components/ImageGallery/ImageGallery';
 import { useParams } from 'react-router-dom';
-import { getproduct } from '../../Data/data';
+import { getproduct } from '../../Data/dataAPIs';
 
 function Product() {
 	const { productName } = useParams();

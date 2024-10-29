@@ -1,6 +1,6 @@
 import { Container, Row } from 'react-bootstrap';
 import ProductCard from './ProductCard';
-import { getProducts } from '../../Data/data';
+import { getProducts } from '../../Data/dataAPIs';
 
 function ProductsSection() {
 	const products = getProducts();
@@ -15,7 +15,10 @@ function ProductsSection() {
 				<Container className="mt-5 p-0">
 					<Row xs="2" className="g-0 g-sm-2 g-md-3 g-lg-4">
 						{products.map((product) => (
-							<ProductCard key={product.name} product={product} />
+							<ProductCard
+								key={product.product_name}
+								{...product}
+							/>
 						))}
 					</Row>
 				</Container>

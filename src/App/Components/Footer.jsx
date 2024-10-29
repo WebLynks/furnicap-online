@@ -10,17 +10,17 @@ function Footer() {
 		<>
 			<Container fluid className="bg-dark text-light">
 				<Container className="pt-5 pb-5">
-					<Row className="g-2">
+					<Row className="gx-2 gy-5">
 						<Col xs="12" md="3" lg="4">
 							<div className="w-8r bg-light text-center border-0 rounded-pill px-3 py-1">
 								<Image fluid src={furnicap_logo} />
 							</div>
-							<p className="mt-3 pe-2">
+							<p className="mt-4 pe-2 fs-6">
 								Furnicap is an innovative e-commerce platform
 								specializing in high-quality furniture and home
 								decor.
 							</p>
-							<Container className="d-flex flex-row p-0 gap-1">
+							<Container className="d-flex flex-row p-0 gap-1 mt-4">
 								<Image
 									fluid
 									className="p-1 w-2r"
@@ -45,23 +45,23 @@ function Footer() {
 						</Col>
 						<Col xs="12" md="2">
 							<div className="h4">Quick links</div>
-							<div>About us</div>
-							<div>Our shop</div>
-							<div>Who we are</div>
-							<div>What we offer</div>
-							<div>Reviews</div>
-							<div>FAQ</div>
+							<div className="mt-4">About us</div>
+							<div className="mt-2">Our shop</div>
+							<div className="mt-2">Who we are</div>
+							<div className="mt-2">What we offer</div>
+							<div className="mt-2">Reviews</div>
+							<div className="mt-2">FAQ</div>
 						</Col>
 						<Col xs="12" md="3" lg="3">
 							<div className="h4">Important links</div>
-							<div>Contact us</div>
-							<div>Return policy</div>
-							<div>Privacy policy</div>
-							<div>Terms and conditions</div>
+							<div className="mt-4">Contact us</div>
+							<div className="mt-2">Return policy</div>
+							<div className="mt-2">Privacy policy</div>
+							<div className="mt-2">Terms and conditions</div>
 						</Col>
 						<Col xs="12" md="4" lg="3">
 							<div className="h4">Get in touch</div>
-							<div>
+							<div className="mt-4">
 								<svg
 									xmlns="http://www.w3.org/2000/svg"
 									width="16"
@@ -74,7 +74,7 @@ function Footer() {
 								</svg>
 								<span className="ms-3">furnicap@gmail.com</span>
 							</div>
-							<div>
+							<div className="mt-2">
 								<svg
 									xmlns="http://www.w3.org/2000/svg"
 									width="16"
@@ -88,7 +88,7 @@ function Footer() {
 								</svg>
 								<span className="ms-3">9899654321</span>
 							</div>
-							<div>
+							<div className="mt-2">
 								<svg
 									xmlns="http://www.w3.org/2000/svg"
 									width="16"
@@ -109,9 +109,11 @@ function Footer() {
 				</Container>
 			</Container>
 			<Container>
-				<Row className="justify-content-end">
-					<Col>Copyright by Furnicap - All rights reserved</Col>
-					<Col className="text-end">
+				<Row xs={1} md={2} className="justify-content-end gy-2">
+					<Col className="text-start">
+						Copyright by Furnicap - All rights reserved
+					</Col>
+					<Col className="text-start text-md-end">
 						Designed and Developed by{' '}
 						<i className="fw-bold">WebLynks</i>
 					</Col>

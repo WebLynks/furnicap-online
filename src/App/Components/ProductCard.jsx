@@ -2,15 +2,15 @@ import { Card, CardSubtitle, CardTitle, Col, Image } from 'react-bootstrap';
 import useImage from '../useImage';
 import { Link } from 'react-router-dom';
 
-function ProductCard({ product }) {
-	const { loading, error, image } = useImage(product.image, 'png');
+function ProductCard({ image_name, product_name, category, price }) {
+	const { loading, error, image: img } = useImage(image_name);
 
-	if (error) return `${product.image} image`;
+	if (error) return `${product_name} image`;
 
 	return (
 		<Col>
 			<Link
-				to={`/products/${product.name}`}
+				to={`/products/${product_name}`}
 				style={{ textDecoration: 'none', color: 'inherit' }}
 			>
 				<Card
@@ -18,22 +18,27 @@ function ProductCard({ product }) {
 					className="fc-bg-grey p-4 border-dark-subtle border-sm-0 rounded-0 rounded-sm-2 h-100"
 				>
 					<CardTitle className="fs-6 fs-md-5 fw-bold">
-						{product.name}
+						{product_name}
 					</CardTitle>
 					{loading ? (
-						`${product.image} image`
+						`${product_name} image`
 					) : (
-						<Image fluid className="p-2 h-100" src={image} />
+						<Image
+							alt={`${product_name} image`}
+							fluid
+							className="p-2 h-100"
+							src={img}
+						/>
 					)}
 					<div className="d-flex justify-content-between">
 						<CardSubtitle as="p" className="fs-6 fs-md-5">
-							{product.category}
+							{category}
 						</CardSubtitle>
-						{product.price ? (
+						{price ? (
 							<CardSubtitle
 								as="p"
 								className="fs-6 fs-md-5"
-							>{`₹${product.price}`}</CardSubtitle>
+							>{`₹${price}`}</CardSubtitle>
 						) : null}
 					</div>
 				</Card>

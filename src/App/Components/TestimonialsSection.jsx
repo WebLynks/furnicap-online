@@ -1,6 +1,6 @@
 import { Container, Row } from 'react-bootstrap';
 import TestimonialCard from './TestimonialCard';
-import { getTestimonials } from '../../Data/data';
+import { getTestimonials } from '../../Data/dataAPIs';
 
 function TestimonialsSection() {
 	const testimonials = getTestimonials();
@@ -17,7 +17,7 @@ function TestimonialsSection() {
 						{testimonials.map((testimonial) => (
 							<TestimonialCard
 								key={testimonial.name}
-								testimonial={testimonial}
+								{...testimonial}
 							/>
 						))}
 					</Row>
