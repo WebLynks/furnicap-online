@@ -15,7 +15,7 @@ function ProductCard({ image_name, product_name, category, price }) {
 			>
 				<Card
 					text="dark"
-					className="fc-bg-grey p-4 border-dark-subtle border-sm-0 rounded-0 rounded-sm-2 h-100"
+					className="p-4 border-dark-subtle border-sm-0 rounded-0 rounded-sm-2 h-100"
 				>
 					<CardTitle className="fs-6 fs-md-5 fw-bold">
 						{product_name}
@@ -26,11 +26,12 @@ function ProductCard({ image_name, product_name, category, price }) {
 						<Image
 							alt={`${product_name} image`}
 							fluid
-							className="p-2 h-100"
+							className="my-1 h-100"
 							src={img}
+							rounded
 						/>
 					)}
-					<div className="d-flex justify-content-between">
+					<div className="d-flex flex-column flex-md-row justify-content-between">
 						<CardSubtitle as="p" className="fs-6 fs-md-5">
 							{category}
 						</CardSubtitle>

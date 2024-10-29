@@ -16,7 +16,7 @@ const getTestimonials = () => {
 
 const getproduct = (productName) => {
 	return PRODUCTS.find((product) => {
-		return product.name === productName;
+		return product.product_name === productName;
 	});
 };
 

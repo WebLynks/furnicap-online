@@ -1,6 +1,6 @@
 import { Col, Container, Row } from 'react-bootstrap';
 
-function About() {
+function AboutSection() {
 	return (
 		<section id="about">
 			<Container className="mt-5 mb-5">
@@ -85,4 +85,4 @@ function About() {
 	);
 }
 
-export default About;
+export default AboutSection;

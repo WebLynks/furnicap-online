@@ -1,6 +1,6 @@
 import { Accordion, Col, Container, Row } from 'react-bootstrap';
-import Footer from '../Components/Footer';
-import Header from '../Components/Header/Header';
+import Footer from '../Sections/Footer';
+import Header from '../Sections/Header/Header';
 import ImageGallery from '../Components/ImageGallery/ImageGallery';
 import { useParams } from 'react-router-dom';
 import { getproduct } from '../../Data/dataAPIs';
@@ -8,7 +8,7 @@ import { getproduct } from '../../Data/dataAPIs';
 function Product() {
 	const { productName } = useParams();
 	const product = getproduct(productName);
-	const images = [product.image, product.image, product.image];
+	const images = [product.image_name, product.image_name, product.image_name];
 
 	return (
 		<>
@@ -19,11 +19,11 @@ function Product() {
 						<ImageGallery images={images} />
 					</Col>
 					<Col xs={12} md={5}>
-						<div className="d-flex">
-							<div className="h3 w-100">{product.name}</div>
-							<div className="h6 flex-shrink-1">
-								Price {product.price}
+						<div className="d-flex flex-column">
+							<div className="h3 w-100">
+								{product.product_name}
 							</div>
+							<div className="h6">{`Price ₹${product.price}`}</div>
 						</div>
 
 						<hr />

@@ -1,5 +1,5 @@
 import { Container, Row } from 'react-bootstrap';
-import TestimonialCard from './TestimonialCard';
+import TestimonialCard from '../Components/TestimonialCard';
 import { getTestimonials } from '../../Data/dataAPIs';
 
 function TestimonialsSection() {

@@ -1,5 +1,5 @@
 import { Container, Row } from 'react-bootstrap';
-import CategoryCard from './CategoryCard';
+import CategoryCard from '../Components/CategoryCard';
 import { getCategories } from '../../Data/dataAPIs';
 
 function ProductsSection() {
@@ -13,7 +13,7 @@ function ProductsSection() {
 					Choose from our range
 				</div>
 				<Container className="mt-5">
-					<Row xs="1" md="2" className="g-3">
+					<Row xs="1" md="2" className="g-5">
 						{categories.map((category) => (
 							<CategoryCard key={category.name} {...category} />
 						))}

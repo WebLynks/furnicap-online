@@ -1,6 +1,6 @@
 import { Card, CardText, Col, Container, Row, Image } from 'react-bootstrap';
 import styles from './HomeHeroTop.module.scss';
-import Header from '../Header/Header';
+import Header from '../../Sections/Header/Header';
 import furnicap_facebook_rounded from '../../../Assets/furnicap_facebook_rounded.png';
 import furnicap_linkedin_rounded from '../../../Assets/furnicap_linkedin_rounded.png';
 import furnicap_instagram_rounded from '../../../Assets/furnicap_instagram_rounded.png';

@@ -1,11 +1,11 @@
-import About from '../Components/About';
-import Footer from '../Components/Footer';
+import About from '../Sections/AboutSection';
+import Footer from '../Sections/Footer';
 import HomeHeroMiddle from '../Components/HomeHeroMiddle/HomeHeroMiddle';
 import HomeHeroTop from '../Components/HomeHeroTop/HomeHeroTop';
 import HeroBottom from '../Components/HeroBottom/HeroBottom';
-import ProductsSection from '../Components/ProductsSection';
-import CategorySection from '../Components/CategorySection';
-import TestimonialsSection from '../Components/TestimonialsSection';
+import ProductsSection from '../Sections/ProductsSection';
+import CategorySection from '../Sections/CategorySection';
+import TestimonialsSection from '../Sections/TestimonialsSection';
 import { useLocation } from 'react-router-dom';
 import { useEffect } from 'react';
 

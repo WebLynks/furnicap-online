@@ -1,13 +1,11 @@
-import {
-	createBrowserRouter,
-	Outlet,
-	redirect,
-	RouterProvider,
-} from 'react-router-dom';
+import { createBrowserRouter, Outlet, RouterProvider } from 'react-router-dom';
 import './App.scss';
 import Home from './Pages/Home';
 import Error from './Pages/Error';
 import Product from './Pages/Product';
+import Products from './Pages/Products';
+import About from './Pages/About';
+import Contact from './Pages/Contact';
 
 const router = createBrowserRouter(
 	[
@@ -15,14 +13,26 @@ const router = createBrowserRouter(
 			path: '/',
 			element: <Outlet />,
 			children: [
-				{ path: '', element: <Home /> },
+				{
+					path: '',
+					element: <Home />,
+				},
 				{
 					path: 'products',
-					loader: () => {
-						return redirect('/#products');
-					},
+					element: <Products />,
 				},
-				{ path: 'products/:productName', element: <Product /> },
+				{
+					path: 'products/:productName',
+					element: <Product />,
+				},
+				{
+					path: 'about',
+					element: <About />,
+				},
+				{
+					path: 'contact',
+					element: <Contact />,
+				},
 			],
 			errorElement: (
 				<>

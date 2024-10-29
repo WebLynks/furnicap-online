@@ -7,7 +7,7 @@ import furnicap_twitter from '../../Assets/furnicap_twitter.png';
 
 function Footer() {
 	return (
-		<>
+		<footer>
 			<Container fluid className="bg-dark text-light">
 				<Container className="pt-5 pb-5">
 					<Row className="gx-2 gy-5">
@@ -119,7 +119,7 @@ function Footer() {
 					</Col>
 				</Row>
 			</Container>
-		</>
+		</footer>
 	);
 }
 

@@ -592,7 +592,7 @@ const PRODUCTS = [
 			'Furnicap Innovatives - Premier choice for conference solutions in India.',
 		QA: 'Does this model have cable management? - Yes, it includes a built-in cable tray.',
 	},
-	{
+	/* {
 		image_name: 'DinningChair-1Furnicap.webp',
 		product_name: 'Dining Chair Model 1',
 		price: '2899',
@@ -610,8 +610,8 @@ const PRODUCTS = [
 		seller_details:
 			'Furnicap Innovatives - Quality dining furniture for Indian homes.',
 		QA: 'Is the cushion removable? - No, the cushion is attached for durability.',
-	},
-	{
+	}, */
+	/* {
 		image_name: 'DinningChair-2Furnicap.webp',
 		product_name: 'Dining Chair Model 2',
 		price: '3199',
@@ -628,7 +628,7 @@ const PRODUCTS = [
 		seller_details:
 			'Furnicap Innovatives - Specialists in affordable dining solutions.',
 		QA: 'Is the faux leather durable? - Yes, it is designed for daily use.',
-	},
+	}, */
 	{
 		image_name: 'DinningTable-1Furnicap.webp',
 		product_name: 'Dining Table Model 1',
@@ -722,7 +722,7 @@ const PRODUCTS = [
 			'Furnicap Innovatives - Leading provider of workspace solutions.',
 		QA: 'Is this desk scratch-resistant? - Yes, it has a scratch-resistant coating.',
 	},
-	{
+	/* {
 		image_name: 'WorkStation-4Furnicap.webp',
 		product_name: 'Workstation Desk Model 4',
 		price: '12499',
@@ -740,7 +740,7 @@ const PRODUCTS = [
 		seller_details:
 			'Furnicap Innovatives - India’s trusted provider of high-quality office furniture.',
 		QA: 'Is this desk stable for computer equipment? - Yes, it’s built for stable, heavy-duty use.',
-	},
+	}, */
 ];
 
 export default PRODUCTS;

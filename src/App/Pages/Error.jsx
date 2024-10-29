@@ -1,6 +1,6 @@
 import { Col, Container, Row } from 'react-bootstrap';
-import Header from '../Components/Header/Header';
-import Footer from '../Components/Footer';
+import Header from '../Sections/Header/Header';
+import Footer from '../Sections/Footer';
 
 function Error() {
 	return (

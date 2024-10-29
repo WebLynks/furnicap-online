@@ -1,5 +1,5 @@
 import { Container, Row } from 'react-bootstrap';
-import ProductCard from './ProductCard';
+import ProductCard from '../Components/ProductCard';
 import { getProducts } from '../../Data/dataAPIs';
 
 function ProductsSection() {
@@ -13,7 +13,7 @@ function ProductsSection() {
 					Browse our selection
 				</div>
 				<Container className="mt-5 p-0">
-					<Row xs="2" className="g-0 g-sm-2 g-md-3 g-lg-4">
+					<Row xs="2" className="g-1 g-md-3">
 						{products.map((product) => (
 							<ProductCard
 								key={product.product_name}
