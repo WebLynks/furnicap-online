@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkfurnicap_online=self.webpackChunkfurnicap_online||[]).push([[5651],{5651:(a,e,i)=>{a.exports=i.p+"static/media/ClassChair-2Furnicap.d0b15d64a78f92cf36d5.jpeg"}}]);

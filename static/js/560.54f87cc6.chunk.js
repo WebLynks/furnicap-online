@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkfurnicap_online=self.webpackChunkfurnicap_online||[]).push([[560],{560:(e,n,a)=>{e.exports=a.p+"static/media/ConferenceTable-3Furnicap.63a9d2b4547364a41954.webp"}}]);

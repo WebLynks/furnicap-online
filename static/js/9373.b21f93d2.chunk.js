@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkfurnicap_online=self.webpackChunkfurnicap_online||[]).push([[9373],{9373:(e,a,n)=>{e.exports=n.p+"static/media/OutdoorSofa-7Furnicap.543e4aed3f830e6a2d07.webp"}}]);

@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkfurnicap_online=self.webpackChunkfurnicap_online||[]).push([[4031],{4031:(e,a,n)=>{e.exports=n.p+"static/media/StaffLockers-1Furnicap.3606526f43895019b4a5.webp"}}]);

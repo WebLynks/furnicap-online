@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkfurnicap_online=self.webpackChunkfurnicap_online||[]).push([[2319],{2319:(e,i,n)=>{e.exports=n.p+"static/media/ErgonomicChair-2Furnicap.d3fe27f3f32fb1995228.webp"}}]);

@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkfurnicap_online=self.webpackChunkfurnicap_online||[]).push([[3530],{3530:(e,i,c)=>{e.exports=c.p+"static/media/ExecutiveChair-2Furnicap.2d08d226c13796d585fe.webp"}}]);

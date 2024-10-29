@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkfurnicap_online=self.webpackChunkfurnicap_online||[]).push([[7786],{7786:(e,n,i)=>{e.exports=i.p+"static/media/DinningTable-2Furnicap.fbd60a3ff7d4621ceb8c.webp"}}]);

@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkfurnicap_online=self.webpackChunkfurnicap_online||[]).push([[9483],{9483:(e,n,a)=>{e.exports=a.p+"static/media/WorkStation-5Furnicap.0beb77377c33fc5fab07.webp"}}]);

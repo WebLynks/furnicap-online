@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkfurnicap_online=self.webpackChunkfurnicap_online||[]).push([[470],{470:(a,e,c)=>{a.exports=c.p+"static/media/sofa_category.9a51af5cae07aa623b3c.jpg"}}]);

@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkfurnicap_online=self.webpackChunkfurnicap_online||[]).push([[343],{2343:(e,a,c)=>{e.exports=c.p+"static/media/wood_table_category.eb31504cb6ce8469ae92.jpg"}}]);

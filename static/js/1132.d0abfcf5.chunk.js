@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkfurnicap_online=self.webpackChunkfurnicap_online||[]).push([[1132],{1132:(e,a,n)=>{e.exports=n.p+"static/media/StudyTable-1Furnicap.606ed31a515500e5f7c2.jpeg"}}]);

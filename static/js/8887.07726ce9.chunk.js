@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkfurnicap_online=self.webpackChunkfurnicap_online||[]).push([[8887],{8887:(e,a,n)=>{e.exports=n.p+"static/media/SlottedAngleRack-1Furnicap.e80db9aa4a6f5ff29174.webp"}}]);

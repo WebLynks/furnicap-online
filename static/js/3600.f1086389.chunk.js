@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkfurnicap_online=self.webpackChunkfurnicap_online||[]).push([[3600],{3600:(c,e,n)=>{c.exports=n.p+"static/media/StaffLockers-2Furnicap.0957cef8782bb99c4fc2.jpg"}}]);

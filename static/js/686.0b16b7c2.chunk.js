@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkfurnicap_online=self.webpackChunkfurnicap_online||[]).push([[686],{9686:(e,a,c)=>{e.exports=c.p+"static/media/conference_table_category_image.86d32cd8d30bed06d5ba.jpg"}}]);

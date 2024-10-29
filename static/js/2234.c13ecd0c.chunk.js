@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkfurnicap_online=self.webpackChunkfurnicap_online||[]).push([[2234],{2234:(n,e,i)=>{n.exports=i.p+"static/media/DinningChair-1Furnicap.7921b0a7b7c59de7dcdf.webp"}}]);

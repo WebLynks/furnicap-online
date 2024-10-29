@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkfurnicap_online=self.webpackChunkfurnicap_online||[]).push([[388],{1388:(e,n,a)=>{e.exports=a.p+"static/media/revolving_chair.4ec51a4d59a36263d33d.png"}}]);

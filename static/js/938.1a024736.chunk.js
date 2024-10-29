@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkfurnicap_online=self.webpackChunkfurnicap_online||[]).push([[938],{5938:(e,n,s)=>{e.exports=s.p+"static/media/staff_lockers.16d39e023afd4cb59552.png"}}]);

@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkfurnicap_online=self.webpackChunkfurnicap_online||[]).push([[5742],{5742:(e,n,c)=>{e.exports=c.p+"static/media/furnicap_herosection.88e793f1c453d1f67629.webp"}}]);

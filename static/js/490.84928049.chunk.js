@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkfurnicap_online=self.webpackChunkfurnicap_online||[]).push([[490],{7490:(e,c,a)=>{e.exports=a.p+"static/media/chair_category.e3a3556279ce4f3021ec.jpg"}}]);

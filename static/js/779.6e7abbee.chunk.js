@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkfurnicap_online=self.webpackChunkfurnicap_online||[]).push([[779],{9779:(e,n,p)=>{e.exports=p.p+"static/media/furnicap_backdrop.03163621d38fad8c805e.png"}}]);

@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkfurnicap_online=self.webpackChunkfurnicap_online||[]).push([[327],{8327:(e,a,c)=>{e.exports=c.p+"static/media/computer_table_category.b02fa8bc3c5468fa8980.jpg"}}]);

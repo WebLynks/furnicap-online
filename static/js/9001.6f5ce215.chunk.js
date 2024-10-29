@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkfurnicap_online=self.webpackChunkfurnicap_online||[]).push([[9001],{9001:(e,p,i)=>{e.exports=i.p+"static/media/MultipurposeCabinet-3Furnicap.b40489f2189f29edced4.webp"}}]);

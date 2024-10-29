@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkfurnicap_online=self.webpackChunkfurnicap_online||[]).push([[831],{1831:(e,a,n)=>{e.exports=n.p+"static/media/luxury_leather_sofa.7994ca64c2e25a9a2236.png"}}]);

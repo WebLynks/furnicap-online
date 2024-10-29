@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkfurnicap_online=self.webpackChunkfurnicap_online||[]).push([[4908],{4908:(e,c,i)=>{e.exports=i.p+"static/media/OfficeTable-1Furnicap.dd73cebf75de9b480b35.webp"}}]);
