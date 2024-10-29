@@ -1,9 +1,9 @@
 import { Container, Row } from 'react-bootstrap';
 import ProductCard from '../Components/ProductCard';
-import { getProducts } from '../../Data/dataAPIs';
+import { getProductWithEachCategory } from '../../Data/dataAPIs';
 
 function ProductsSection() {
-	const products = getProducts();
+	const products = getProductWithEachCategory();
 
 	return (
 		<section id="products">

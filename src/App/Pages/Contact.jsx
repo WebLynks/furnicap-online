@@ -12,7 +12,7 @@ function Contact() {
 		<>
 			<Header theme="light" />
 			<section id="contact">
-				<Container>
+				<Container className="min-vh-100">
 					<Row xs={1} md={2} className="gy-5">
 						<Col>
 							<Container className="mt-5">

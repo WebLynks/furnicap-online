@@ -20,4 +20,20 @@ const getproduct = (productName) => {
 	});
 };
 
-export { getproduct, getTestimonials, getCategories, getProducts };
+const getProductWithEachCategory = () => {
+	const productsWithEachCategory = {};
+	CATEGORIES.forEach((category) => {
+		productsWithEachCategory[category.name] = PRODUCTS.find((product) => {
+			return product.category === category.name;
+		});
+	});
+	return Object.values(productsWithEachCategory);
+};
+
+export {
+	getproduct,
+	getTestimonials,
+	getCategories,
+	getProducts,
+	getProductWithEachCategory,
+};
