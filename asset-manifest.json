@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/furnicap-online/static/css/main.c829e6a3.css",
-    "main.js": "/furnicap-online/static/js/main.63d78689.js",
+    "main.css": "/furnicap-online/static/css/main.b9036d9b.css",
+    "main.js": "/furnicap-online/static/js/main.c7425fe8.js",
     "static/js/1638.03d372e3.chunk.js": "/furnicap-online/static/js/1638.03d372e3.chunk.js",
     "static/js/5651.a741724f.chunk.js": "/furnicap-online/static/js/5651.a741724f.chunk.js",
     "static/js/5556.a331aafd.chunk.js": "/furnicap-online/static/js/5556.a331aafd.chunk.js",
@@ -118,11 +118,11 @@
     "static/media/furnicap_support.png": "/furnicap-online/static/media/furnicap_support.5fc25929f62062081a0f.png",
     "static/media/furnicap_exceptionalservice.png": "/furnicap-online/static/media/furnicap_exceptionalservice.d26a3cf1c35ffa3c0bc5.png",
     "index.html": "/furnicap-online/index.html",
-    "main.c829e6a3.css.map": "/furnicap-online/static/css/main.c829e6a3.css.map",
-    "main.63d78689.js.map": "/furnicap-online/static/js/main.63d78689.js.map"
+    "main.b9036d9b.css.map": "/furnicap-online/static/css/main.b9036d9b.css.map",
+    "main.c7425fe8.js.map": "/furnicap-online/static/js/main.c7425fe8.js.map"
   },
   "entrypoints": [
-    "static/css/main.c829e6a3.css",
-    "static/js/main.63d78689.js"
+    "static/css/main.b9036d9b.css",
+    "static/js/main.c7425fe8.js"
   ]
 }
