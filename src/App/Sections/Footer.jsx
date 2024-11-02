@@ -46,18 +46,18 @@ function Footer() {
 						<Col xs="12" md="2">
 							<div className="h4">Quick links</div>
 							<div className="mt-4">About us</div>
-							<div className="mt-2">Our shop</div>
-							<div className="mt-2">Who we are</div>
-							<div className="mt-2">What we offer</div>
-							<div className="mt-2">Reviews</div>
-							<div className="mt-2">FAQ</div>
+							<div className="mt-3">Our shop</div>
+							<div className="mt-3">Who we are</div>
+							<div className="mt-3">What we offer</div>
+							<div className="mt-3">Reviews</div>
+							<div className="mt-3">FAQ</div>
 						</Col>
 						<Col xs="12" md="3" lg="3">
 							<div className="h4">Important links</div>
 							<div className="mt-4">Contact us</div>
-							<div className="mt-2">Return policy</div>
-							<div className="mt-2">Privacy policy</div>
-							<div className="mt-2">Terms and conditions</div>
+							<div className="mt-3">Return policy</div>
+							<div className="mt-3">Privacy policy</div>
+							<div className="mt-3">Terms and conditions</div>
 						</Col>
 						<Col xs="12" md="4" lg="3">
 							<div className="h4">Get in touch</div>
@@ -72,9 +72,11 @@ function Footer() {
 								>
 									<path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z" />
 								</svg>
-								<span className="ms-3">furnicap@gmail.com</span>
+								<span className="ms-3 fs-6 fs-md-p9r">
+									furnicapinnovatives@gmail.com
+								</span>
 							</div>
-							<div className="mt-2">
+							<div className="mt-3">
 								<svg
 									xmlns="http://www.w3.org/2000/svg"
 									width="16"
@@ -86,9 +88,9 @@ function Footer() {
 									<path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
 									<path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm12 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1v-1c0-1-1-4-6-4s-6 3-6 4v1a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1z" />
 								</svg>
-								<span className="ms-3">9899654321</span>
+								<span className="ms-3">+919830441013</span>
 							</div>
-							<div className="mt-2">
+							<div className="mt-3">
 								<svg
 									xmlns="http://www.w3.org/2000/svg"
 									width="16"
@@ -100,7 +102,7 @@ function Footer() {
 									<path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71z" />
 									<path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0" />
 								</svg>
-								<span className="ms-3">
+								<span className="ms-3 fs-md-p9r fs-6">
 									Monday-Friday, 8am-8pm
 								</span>
 							</div>
@@ -110,10 +112,10 @@ function Footer() {
 			</Container>
 			<Container>
 				<Row xs={1} md={2} className="justify-content-end gy-2">
-					<Col className="text-start">
-						Copyright by Furnicap - All rights reserved
+					<Col className="text-center text-md-start fs-p9r">
+						© 2024 Furnicap. All rights reserved.
 					</Col>
-					<Col className="text-start text-md-end">
+					<Col className="text-center text-md-end fs-p9r">
 						Designed and Developed by{' '}
 						<i className="fw-bold">WebLynks</i>
 					</Col>

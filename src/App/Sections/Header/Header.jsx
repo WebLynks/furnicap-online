@@ -18,7 +18,7 @@ function Header({ theme }) {
 			<Navbar expand="md" data-bs-theme={theme} className="m-2">
 				<Container>
 					<NavbarBrand
-						className={`w-13r bg-light text-center border rounded-pill px-4 py-2`}
+						className={`w-9r w-md-11r w-lg-13r bg-light text-center border rounded-pill px-4 py-1 py-md-2`}
 					>
 						<Image fluid src={furnicap_logo} />
 					</NavbarBrand>
@@ -29,33 +29,33 @@ function Header({ theme }) {
 					>
 						<Nav
 							fill
-							className="border-md rounded-pill px-lg-4 px-md-3"
+							className="border-md rounded-pill px-lg-4 px-md-3 px-2 ms-lg-n1 ms-xl-n3 ms-xxl-n5 align-items-start mt-3 mt-md-0"
 							data-bs-theme={theme === 'light' ? 'dark' : 'light'}
 						>
-							<NavItem>
+							<NavItem className="mt-1 mt-md-0">
 								<NavLink as={Link} to="/">
-									<span className="h6 px-lg-3 px-md-2">
+									<span className="fs-xs-4 fs-md-6 fw-bold fw-md-medium px-lg-3 px-md-2">
 										Home
 									</span>
 								</NavLink>
 							</NavItem>
-							<NavItem>
+							<NavItem className="mt-3 mt-md-0">
 								<NavLink as={Link} to="/products">
-									<span className="h6 px-lg-3 px-md-2">
+									<span className="fs-xs-4 fs-md-6 fw-bold fw-md-medium px-lg-3 px-md-2">
 										Products
 									</span>
 								</NavLink>
 							</NavItem>
-							<NavItem>
+							<NavItem className="mt-3 mt-md-0">
 								<NavLink as={Link} to="/about">
-									<span className="h6 px-lg-3 px-md-2">
+									<span className="fs-xs-4 fs-md-6 fw-bold fw-md-medium  px-lg-3 px-md-2">
 										About Us
 									</span>
 								</NavLink>
 							</NavItem>
-							<NavItem>
+							<NavItem className="mt-3 mt-md-0">
 								<NavLink as={Link} to="/contact">
-									<span className="h6 px-lg-3 px-md-2">
+									<span className="fs-xs-4 fs-md-6 fw-bold fw-md-medium  px-lg-3 px-md-2">
 										Contact
 									</span>
 								</NavLink>

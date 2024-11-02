@@ -13,7 +13,7 @@ function ProductsSection() {
 					Browse our selection
 				</div>
 				<Container className="mt-5 p-0">
-					<Row xs="2" className="g-1 g-md-3">
+					<Row xs="1" md={2} className="g-1 g-md-3">
 						{products.map((product) => (
 							<ProductCard
 								key={product.product_name}

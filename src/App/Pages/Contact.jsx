@@ -22,40 +22,53 @@ function Contact() {
 											Contact Information
 										</div>
 										<div className="mt-3 fs-6 fs-md-5">
-											<div>Get in touch</div>
+											<div className="fs-6">
+												Get in touch
+											</div>
 										</div>
 									</Col>
 								</Row>
-								<Row className="mt-5">
+								<Row xs={1} md={2} className="mt-5">
 									<Col>
 										<div className="fs-2r fs-xxl-3r fw-bold lh-1">
 											Phone
 										</div>
 										<div className="mt-3 fs-6 fs-md-5">
-											<div>9899654321</div>
+											<div className="fs-6">
+												+919830441013
+											</div>
 										</div>
 									</Col>
-									<Col>
+									<Col className="mt-5 mt-md-0">
 										<div className="fs-2r fs-xxl-3r fw-bold lh-1">
 											Location
 										</div>
 										<div className="mt-3 fs-6 fs-md-5">
-											<div>
-												FF Main Street, 22nd Avenue
+											<div className="fs-6">
+												A1M, Roy Bahadur Rd, Sneha
+												Garden, Buroshibtalla, Behala,
+												Kolkata, West
+												Bengal 700034, India
 											</div>
 										</div>
 									</Col>
 								</Row>
 								<Row className="mt-5">
-									<Col xs="6">
+									<Col xs="12" md="6">
 										<div className="fs-2r fs-xxl-3r fw-bold lh-1">
 											Email
 										</div>
 										<div className="mt-3 fs-p9r fs-md-5">
-											<div>furnicap@gmail.com</div>
+											<div className="fs-6">
+												furnicapinnovatives@gmail.com
+											</div>
 										</div>
 									</Col>
-									<Col xs="6">
+									<Col
+										xs="12"
+										md="6"
+										className="mt-5 mt-md-0"
+									>
 										<div className="fs-2r fs-xxl-3r fw-bold lh-1">
 											Follow Us
 										</div>

@@ -32,13 +32,13 @@ function ProductCard({ image_name, product_name, category, price }) {
 						/>
 					)}
 					<div className="d-flex flex-column flex-md-row justify-content-between">
-						<CardSubtitle as="p" className="fs-6 fs-md-5">
+						<CardSubtitle as="p" className="fs-6 fs-md-5 mt-2">
 							{category}
 						</CardSubtitle>
 						{price ? (
 							<CardSubtitle
 								as="p"
-								className="fs-6 fs-md-5"
+								className="fs-6 fs-md-5 mt-2"
 							>{`₹${price}`}</CardSubtitle>
 						) : null}
 					</div>
