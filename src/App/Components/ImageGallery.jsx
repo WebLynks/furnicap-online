@@ -1,0 +1,51 @@
+import React, { useEffect, useState } from 'react';
+import { Col, Container, Image, Row } from 'react-bootstrap';
+import useImage from '../useImage';
+
+const ImageGallery = ({ images }) => {
+	const [index, setIndex] = useState(0);
+	const { loading, error, image } = useImage(images[0], 'png');
+
+	useEffect(() => {
+		window.scrollTo(0, 0); // Scroll to the top of the page
+	}, []);
+
+	if (error) return `${images[0]} image`;
+
+	const handleSelect = (selectedIndex) => {
+		setIndex(selectedIndex);
+	};
+
+	return (
+		<Container>
+			<Row className="gx-0">
+				<Col xs={3} className="">
+					<div className="d-flex flex-column justify-content-start vh-60 gap-2">
+						{loading
+							? `${images[0]} image`
+							: images.map((img, idx) => (
+									<Image
+										key={idx}
+										fluid
+										src={image}
+										className={`h-30 w-100 ${
+											index === idx
+												? 'border-dark border border-1 rounded-1'
+												: ''
+										}`}
+										onClick={() => handleSelect(idx)}
+									></Image>
+							  ))}
+					</div>
+				</Col>
+				<Col xs={9} className="">
+					<Container className="vh-60">
+						<Image fluid src={image} className="w-100 h-95"></Image>
+					</Container>
+				</Col>
+			</Row>
+		</Container>
+	);
+};
+
+export default ImageGallery;
