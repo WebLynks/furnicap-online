@@ -30,10 +30,20 @@ const getProductWithEachCategory = () => {
 	return Object.values(productsWithEachCategory);
 };
 
+const getFourRandomProductImages = () => {
+	const productImages = [];
+	for (let i = 0; i < 4; i++) {
+		const randomIndex = Math.floor(Math.random() * PRODUCTS.length);
+		productImages.push(PRODUCTS[randomIndex].image_name);
+	}
+	return productImages;
+};
+
 export {
 	getproduct,
 	getTestimonials,
 	getCategories,
 	getProducts,
 	getProductWithEachCategory,
+	getFourRandomProductImages,
 };
