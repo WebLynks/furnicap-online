@@ -1,9 +1,10 @@
-import { Col, Container, Image, Row } from 'react-bootstrap';
+import { Col, Container, Image, NavLink, Row } from 'react-bootstrap';
 import furnicap_logo from '../../Assets/furnicao_logo.png';
 import furnicap_facebook_rounded from '../../Assets/furnicap_facebook_rounded.png';
 import furnicap_linkedin_rounded from '../../Assets/furnicap_linkedin_rounded.png';
 import furnicap_instagram_rounded from '../../Assets/furnicap_instagram_rounded.png';
 import furnicap_twitter from '../../Assets/furnicap_twitter.png';
+import { Link } from 'react-router-dom';
 
 function Footer() {
 	return (
@@ -21,36 +22,66 @@ function Footer() {
 								decor.
 							</p>
 							<Container className="d-flex flex-row p-0 gap-1 mt-4">
-								<Image
-									fluid
-									className="p-1 w-2r"
-									src={furnicap_facebook_rounded}
-								/>
-								<Image
-									fluid
-									className="p-1 w-2r"
-									src={furnicap_linkedin_rounded}
-								/>
-								<Image
-									fluid
-									className="p-1 w-2r"
-									src={furnicap_instagram_rounded}
-								/>
-								<Image
-									fluid
-									className="p-1 w-2r rounded-circle"
-									src={furnicap_twitter}
-								/>
+								<a
+									href="https://www.facebook.com/furnicap"
+									target="_blank"
+									rel="noopener noreferrer"
+								>
+									<Image
+										fluid
+										className="p-1 w-2r"
+										src={furnicap_facebook_rounded}
+									/>
+								</a>
+								<a
+									href="https://www.linkedin.com/company/furnicap/"
+									target="_blank"
+									rel="noopener noreferrer"
+								>
+									<Image
+										fluid
+										className="p-1 w-2r"
+										src={furnicap_linkedin_rounded}
+									/>
+								</a>
+								<a
+									href="https://www.instagram.com/furnicap.india/"
+									target="_blank"
+									rel="noopener noreferrer"
+								>
+									<Image
+										fluid
+										className="p-1 w-2r"
+										src={furnicap_instagram_rounded}
+									/>
+								</a>
+								<a
+									href="https://x.com/furnicapinn"
+									target="_blank"
+									rel="noopener noreferrer"
+								>
+									<Image
+										fluid
+										className="p-1 w-2r rounded-circle"
+										src={furnicap_twitter}
+									/>
+								</a>
 							</Container>
 						</Col>
 						<Col xs="12" md="2">
 							<div className="h4">Quick links</div>
-							<div className="mt-4">About us</div>
-							<div className="mt-3">Our shop</div>
-							<div className="mt-3">Who we are</div>
-							<div className="mt-3">What we offer</div>
-							<div className="mt-3">Reviews</div>
-							<div className="mt-3">FAQ</div>
+							<NavLink as={Link} to="/">
+								<div className="mt-4">Home</div>
+							</NavLink>
+							<NavLink as={Link} to="/products">
+								<div className="mt-3">Products</div>
+							</NavLink>
+							<NavLink as={Link} to="/company-profile">
+								<div className="mt-3">Company profile</div>
+							</NavLink>
+							<NavLink as={Link} to="/contact">
+								<div className="mt-3">Contact</div>
+							</NavLink>
 						</Col>
 						<Col xs="12" md="3" lg="3">
 							<div className="h4">Important links</div>

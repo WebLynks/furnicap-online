@@ -6,8 +6,14 @@ import furnicap_twitter from '../../Assets/furnicap_twitter.png';
 import Footer from '../Sections/Footer';
 import Header from '../Sections/Header/Header';
 import ContactHeroMiddle from '../Components/ContactHeroMiddle/ContactHeroMiddle';
+import { useEffect } from 'react';
 
 function Contact() {
+	// scroll to top on page load smoothly
+	useEffect(() => {
+		window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
+	}, []);
+
 	return (
 		<>
 			<Header theme="light" />
@@ -74,32 +80,56 @@ function Contact() {
 										</div>
 										<div className="mt-3 mb-md-5 fs-6 fs-md-5">
 											<Container className="d-flex flex-row p-0 gap-1">
-												<Image
-													fluid
-													className="p-1 w-2r rounded-circle bg-dark"
-													src={
-														furnicap_facebook_rounded
-													}
-												/>
-												<Image
-													fluid
-													className="p-1 w-2r rounded-circle bg-dark"
-													src={
-														furnicap_linkedin_rounded
-													}
-												/>
-												<Image
-													fluid
-													className="p-1 w-2r rounded-circle bg-dark"
-													src={
-														furnicap_instagram_rounded
-													}
-												/>
-												<Image
-													fluid
-													className="p-1 w-2r rounded-circle bg-dark"
-													src={furnicap_twitter}
-												/>
+												<a
+													href="https://www.facebook.com/furnicap"
+													target="_blank"
+													rel="noopener noreferrer"
+												>
+													<Image
+														fluid
+														className="p-1 w-2r rounded-circle bg-dark"
+														src={
+															furnicap_facebook_rounded
+														}
+													/>
+												</a>
+												<a
+													href="https://www.linkedin.com/company/furnicap/"
+													target="_blank"
+													rel="noopener noreferrer"
+												>
+													<Image
+														fluid
+														className="p-1 w-2r rounded-circle bg-dark"
+														src={
+															furnicap_linkedin_rounded
+														}
+													/>
+												</a>
+												<a
+													href="https://www.instagram.com/furnicap.india/"
+													target="_blank"
+													rel="noopener noreferrer"
+												>
+													<Image
+														fluid
+														className="p-1 w-2r rounded-circle bg-dark"
+														src={
+															furnicap_instagram_rounded
+														}
+													/>
+												</a>
+												<a
+													href="https://x.com/furnicapinn"
+													target="_blank"
+													rel="noopener noreferrer"
+												>
+													<Image
+														fluid
+														className="p-1 w-2r rounded-circle bg-dark"
+														src={furnicap_twitter}
+													/>
+												</a>
 											</Container>
 										</div>
 									</Col>

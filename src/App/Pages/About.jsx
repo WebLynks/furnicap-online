@@ -1,8 +1,14 @@
 import { Col, Container, Row } from 'react-bootstrap';
 import Footer from '../Sections/Footer';
 import Header from '../Sections/Header/Header';
+import { useEffect } from 'react';
 
 function About() {
+	// scroll to top on page load smoothly
+	useEffect(() => {
+		window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
+	}, []);
+
 	return (
 		<>
 			<Header theme="light" />
@@ -11,7 +17,7 @@ function About() {
 					<Row>
 						<Col md="4">
 							<div className="fs-3r fs-xxl-4r fw-bold lh-1">
-								ABOUT US
+								COMPANY PROFILE
 							</div>
 						</Col>
 						<Col md="8" className="mt-3 mt-md-0 fs-6 fs-md-5">

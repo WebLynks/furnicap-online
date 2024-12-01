@@ -47,9 +47,9 @@ function Header({ theme }) {
 								</NavLink>
 							</NavItem>
 							<NavItem className="mt-3 mt-md-0">
-								<NavLink as={Link} to="/about">
+								<NavLink as={Link} to="/company-profile">
 									<span className="fs-xs-4 fs-md-6 fw-bold fw-md-medium  px-lg-3 px-md-2">
-										About Us
+										Company Profile
 									</span>
 								</NavLink>
 							</NavItem>

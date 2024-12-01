@@ -5,11 +5,17 @@ import ImageGallery from '../Components/ImageGallery';
 import { useParams } from 'react-router-dom';
 import { getproduct } from '../../Data/dataAPIs';
 import RandomImageGallery from '../Components/RandomImageGallery';
+import { useEffect } from 'react';
 
 function Product() {
 	const { productName } = useParams();
 	const product = getproduct(productName);
 	const images = [product.image_name, product.image_name, product.image_name];
+
+	// scroll to top on page load smoothly
+	useEffect(() => {
+		window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
+	}, []);
 
 	return (
 		<>

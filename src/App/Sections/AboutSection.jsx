@@ -3,11 +3,11 @@ import { Col, Container, Row } from 'react-bootstrap';
 function AboutSection() {
 	return (
 		<section id="about">
-			<Container className="mt-5 mb-5">
+			<Container className="mt-5 mb-5 ps-4 ps-md-0 pe-4 pe-md-0">
 				<Row>
 					<Col md="4">
 						<div className="fs-3r fs-xxl-4r fw-bold lh-1">
-							ABOUT US
+							COMPANY PROFILE
 						</div>
 					</Col>
 					<Col md="8" className="mt-3 mt-md-0 fs-6 fs-md-5">

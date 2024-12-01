@@ -27,22 +27,40 @@ function HomeHeroTop() {
 					>
 						<Container className="d-flex flex-column">
 							<Container>
-								<Image
-									className="p-1 w-2r"
-									src={furnicap_facebook_rounded}
-								/>
+								<a
+									href="https://www.facebook.com/furnicap"
+									target="_blank"
+									rel="noopener noreferrer"
+								>
+									<Image
+										className="p-1 w-2r"
+										src={furnicap_facebook_rounded}
+									/>
+								</a>
 							</Container>
 							<Container>
-								<Image
-									className="p-1 w-2r"
-									src={furnicap_linkedin_rounded}
-								/>
+								<a
+									href="https://www.linkedin.com/company/furnicap/"
+									target="_blank"
+									rel="noopener noreferrer"
+								>
+									<Image
+										className="p-1 w-2r"
+										src={furnicap_linkedin_rounded}
+									/>
+								</a>
 							</Container>
 							<Container>
-								<Image
-									className="p-1 w-2r"
-									src={furnicap_instagram_rounded}
-								/>
+								<a
+									href="https://www.instagram.com/furnicap.india/"
+									target="_blank"
+									rel="noopener noreferrer"
+								>
+									<Image
+										className="p-1 w-2r"
+										src={furnicap_instagram_rounded}
+									/>
+								</a>
 							</Container>
 						</Container>
 					</Col>
