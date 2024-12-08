@@ -7,7 +7,7 @@ function AboutSection() {
 				<Row>
 					<Col md="4">
 						<div className="fs-3r fs-xxl-4r fw-bold lh-1">
-							COMPANY PROFILE
+							ABOUT US
 						</div>
 					</Col>
 					<Col md="8" className="mt-3 mt-md-0 fs-6 fs-md-5">

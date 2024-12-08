@@ -142,7 +142,7 @@ function Footer() {
 				</Container>
 			</Container>
 			<Container>
-				<Row xs={1} md={2} className="justify-content-end gy-2">
+				<Row xs={1} md={2} className="justify-content-end gy-2 p-2">
 					<Col className="text-center text-md-start fs-p9r">
 						© 2024 Furnicap. All rights reserved.
 					</Col>
