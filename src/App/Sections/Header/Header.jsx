@@ -9,15 +9,22 @@ import {
 	NavItem,
 	NavLink,
 } from 'react-bootstrap';
-import { NavLink as Link } from 'react-router-dom';
+import { NavLink as Link, useNavigate } from 'react-router-dom';
 import furnicap_logo from '../../../Assets/furnicao_logo.png';
 
 function Header({ theme }) {
+	const navigate = useNavigate();
+
+	const handleLogoClick = () => {
+		navigate('/', { replace: true });
+	};
+
 	return (
 		<header>
 			<Navbar expand="md" data-bs-theme={theme} className="m-2">
 				<Container>
 					<NavbarBrand
+						onClick={handleLogoClick}
 						className={`w-9r w-md-11r w-lg-13r bg-light text-center border rounded-pill px-4 py-1 py-md-2`}
 					>
 						<Image fluid src={furnicap_logo} />

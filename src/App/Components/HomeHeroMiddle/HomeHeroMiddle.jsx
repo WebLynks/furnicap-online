@@ -12,7 +12,7 @@ function HomeHeroMiddle() {
 			className={`${styles.hero} border-0 mt-5 text-light d-flex align-items-center justify-content-center mb-5`}
 		>
 			<div
-				className={`bg-dark opacity-50 h-80 w-xs-90 w-sm-75 gap-0
+				className={`bg-dark opacity-75 h-80 w-xs-90 w-sm-75 gap-0
 				 w-md-100 p-0 d-flex align-items-center justify-content-center 
 				 flex-md-row flex-column`}
 			>
