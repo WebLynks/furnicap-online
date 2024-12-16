@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkfurnicap_online=self.webpackChunkfurnicap_online||[]).push([[83],{83:(e,n,p)=>{e.exports=p.p+"static/media/Furnicap_Curves.39171f048a2d1e984ce2.webp"}}]);

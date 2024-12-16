@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkfurnicap_online=self.webpackChunkfurnicap_online||[]).push([[7005],{7005:(e,a,n)=>{e.exports=n.p+"static/media/Furnicap_Outdoor.41e9e7ed1a3e9b2a4dc1.webp"}}]);

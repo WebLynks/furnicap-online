@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkfurnicap_online=self.webpackChunkfurnicap_online||[]).push([[1820],{1820:(e,n,p)=>{e.exports=p.p+"static/media/Furnicap_Iron_Steel.45b164b8382654c92158.jpeg"}}]);

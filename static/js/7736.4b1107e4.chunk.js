@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkfurnicap_online=self.webpackChunkfurnicap_online||[]).push([[7736],{7736:(e,a,c)=>{e.exports=c.p+"static/media/Furnicap_Sofa.e4b7acb551e5a5b9cfdf.webp"}}]);

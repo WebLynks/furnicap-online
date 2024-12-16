@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkfurnicap_online=self.webpackChunkfurnicap_online||[]).push([[6033],{6033:(a,e,n)=>{a.exports=n.p+"static/media/Furnicap_Educational.ad5aa434c4356688b938.jpeg"}}]);

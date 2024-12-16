@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkfurnicap_online=self.webpackChunkfurnicap_online||[]).push([[3678],{3678:(e,n,i)=>{e.exports=i.p+"static/media/Furnicap_Wood_Furniture.199e83eb82865111b106.jpeg"}}]);
