@@ -1,5 +1,6 @@
 import PRODUCTS from './products';
 import CATEGORIES from './categories';
+import CATALOGUES from './catalogues';
 import TESTIMONIALS from './testimonials';
 
 const getProducts = () => {
@@ -10,8 +11,23 @@ const getCategories = () => {
 	return CATEGORIES;
 };
 
+const getCatalogues = () => {
+	return CATALOGUES;
+};
+
 const getTestimonials = () => {
-	return TESTIMONIALS;
+	// return 6 random testimonials but don't repeat one already included
+	const randomTestimonials = [];
+	const usedIndexes = [];
+	while (randomTestimonials.length < 6) {
+		const randomIndex = Math.floor(Math.random() * TESTIMONIALS.length);
+		if (!usedIndexes.includes(randomIndex)) {
+			randomTestimonials.push(TESTIMONIALS[randomIndex]);
+			usedIndexes.push(randomIndex);
+		}
+	}
+
+	return randomTestimonials;
 };
 
 const getproduct = (productName) => {
@@ -31,10 +47,14 @@ const getProductWithEachCategory = () => {
 };
 
 const getFourRandomProductImages = () => {
+	// getFourRandomProductImages without any duplicate images
 	const productImages = [];
-	for (let i = 0; i < 4; i++) {
+	while (productImages.length < 4) {
 		const randomIndex = Math.floor(Math.random() * PRODUCTS.length);
-		productImages.push(PRODUCTS[randomIndex].image_name);
+		const randomProduct = PRODUCTS[randomIndex];
+		if (!productImages.includes(randomProduct.image)) {
+			productImages.push(randomProduct.image);
+		}
 	}
 	return productImages;
 };
@@ -43,6 +63,7 @@ export {
 	getproduct,
 	getTestimonials,
 	getCategories,
+	getCatalogues,
 	getProducts,
 	getProductWithEachCategory,
 	getFourRandomProductImages,

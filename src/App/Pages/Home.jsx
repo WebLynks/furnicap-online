@@ -4,7 +4,7 @@ import HomeHeroMiddle from '../Components/HomeHeroMiddle/HomeHeroMiddle';
 import HomeHeroTop from '../Components/HomeHeroTop/HomeHeroTop';
 import HeroBottom from '../Components/HeroBottom/HeroBottom';
 import ProductsSection from '../Sections/ProductsSection';
-import CategorySection from '../Sections/CategorySection';
+import CatalogueSection from '../Sections/CatalogueSection';
 import TestimonialsSection from '../Sections/TestimonialsSection';
 import { useLocation } from 'react-router-dom';
 import { useEffect } from 'react';
@@ -32,7 +32,7 @@ function Home() {
 			<About />
 			<HomeHeroMiddle />
 			<ProductsSection />
-			<CategorySection />
+			<CatalogueSection />
 			<TestimonialsSection />
 			<HeroBottom />
 			<Footer />

@@ -80,15 +80,15 @@ const TESTIMONIALS = [
 		product: 'Class Chair',
 		quote: 'Perfect seating solution.',
 	},
-	{
-		name: 'Sonal Thakur',
-		date: '2024-10-12',
-		testimonials:
-			'I love my new Sofa from Furnicap Innovatives. It’s super cozy and gives my living room a modern touch. Definitely worth it!',
-		image: 'Sofa-1Furnicap.jpg',
-		product: 'Sofa',
-		quote: 'Modern comfort redefined.',
-	},
+	// {
+	// 	name: 'Sonal Thakur',
+	// 	date: '2024-10-12',
+	// 	testimonials:
+	// 		'I love my new Sofa from Furnicap Innovatives. It’s super cozy and gives my living room a modern touch. Definitely worth it!',
+	// 	image: 'Sofa-1Furnicap.jpg',
+	// 	product: 'Sofa',
+	// 	quote: 'Modern comfort redefined.',
+	// },
 ];
 
 export default TESTIMONIALS;
