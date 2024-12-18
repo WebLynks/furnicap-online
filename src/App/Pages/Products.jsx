@@ -16,7 +16,6 @@ function Products() {
 
 	return (
 		<>
-			<Outlet />
 			<Header theme="light" />
 			<section id="products">
 				<Container className="mt-5 mb-5">
