@@ -4,12 +4,13 @@ import Header from '../Sections/Header/Header';
 import ImageGallery from '../Components/ImageGallery';
 import { useParams } from 'react-router-dom';
 import { getproduct } from '../../Data/dataAPIs';
-import RandomImageGallery from '../Components/RandomImageGallery';
+// import RandomImageGallery from '../Components/RandomImageGallery';
 import { useEffect } from 'react';
 
 function Product() {
 	const { productName } = useParams();
-	const product = getproduct(productName);
+	const product_name = productName.split('-').join(' ');
+	const product = getproduct(product_name);
 	const images = [product.image_name, product.image_name, product.image_name];
 
 	// scroll to top on page load smoothly
@@ -30,16 +31,16 @@ function Product() {
 						</Row>
 						<Row className="d-none d-md-block">
 							<Col xs={12}>
-								<div className="h5 mt-5">
+								<div className="h5 mt-5 d-none">
 									Other designs you'll like
 								</div>
-								<RandomImageGallery />
+								{/* <RandomImageGallery /> */}
 							</Col>
 							<Col xs={12}>
-								<div className="h5 mt-5">
+								<div className="h5 mt-5 d-none">
 									Customers also bought
 								</div>
-								<RandomImageGallery />
+								{/* <RandomImageGallery /> */}
 							</Col>
 						</Row>
 					</Col>
@@ -173,11 +174,11 @@ function Product() {
 				<Row className="d-block d-md-none">
 					<Col xs={12}>
 						<div className="h5 mt-5">Other designs you'll like</div>
-						<RandomImageGallery />
+						{/* <RandomImageGallery /> */}
 					</Col>
 					<Col xs={12}>
 						<div className="h5 mt-5">Customers also bought</div>
-						<RandomImageGallery />
+						{/* <RandomImageGallery /> */}
 					</Col>
 				</Row>
 			</Container>

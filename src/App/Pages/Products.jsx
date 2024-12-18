@@ -4,6 +4,7 @@ import ProductCard from '../Components/ProductCard';
 import Header from '../Sections/Header/Header';
 import Footer from '../Sections/Footer';
 import { useEffect } from 'react';
+import { Outlet } from 'react-router-dom';
 
 function Products() {
 	const products = getProducts();
@@ -15,6 +16,7 @@ function Products() {
 
 	return (
 		<>
+			<Outlet />
 			<Header theme="light" />
 			<section id="products">
 				<Container className="mt-5 mb-5">
@@ -22,7 +24,7 @@ function Products() {
 						Our range of products
 					</div>
 					<Container fluid className="mt-5 p-0">
-						<Row xs={2} md={3} className="g-1 g-md-2">
+						<Row xs={2} md={3} className="g-2 g-md-2">
 							{products.map((product) => (
 								<ProductCard
 									key={product.product_name}

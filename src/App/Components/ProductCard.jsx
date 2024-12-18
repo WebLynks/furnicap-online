@@ -4,18 +4,19 @@ import { Link } from 'react-router-dom';
 
 function ProductCard({ image_name, product_name, category, price }) {
 	const { loading, error, image: img } = useImage(image_name);
+	const productName = product_name.split(' ').join('-');
 
 	if (error) return `${product_name} image`;
 
 	return (
 		<Col>
 			<Link
-				to={`/products/${product_name}`}
+				to={`/products/${productName}`}
 				style={{ textDecoration: 'none', color: 'inherit' }}
 			>
 				<Card
 					text="dark"
-					className="p-4 border-dark-subtle border-sm-0 rounded-0 rounded-sm-2 h-100"
+					className="p-3 border-dark-subtle border-sm-0 rounded-0 rounded-sm-2 h-100"
 				>
 					<CardTitle className="fs-6 fs-md-5 fw-bold">
 						{product_name}
