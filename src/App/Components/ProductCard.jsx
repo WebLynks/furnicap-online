@@ -26,7 +26,7 @@ function ProductCard({
 				>
 					<CardTitle
 						className={`fs-6 ${
-							isFontSmall ? 'fs-md-6' : 'fs-md-5'
+							isFontSmall ? 'fs-lg-6' : 'fs-lg-5'
 						} fw-bold`}
 					>
 						{product_name}
@@ -43,13 +43,20 @@ function ProductCard({
 						/>
 					)}
 					<div className="d-flex flex-column flex-md-row justify-content-between">
-						<CardSubtitle as="p" className="fs-6 fs-md-5 mt-2">
+						<CardSubtitle
+							as="p"
+							className={`fs-6 ${
+								isFontSmall ? 'fs-lg-6' : 'fs-lg-5'
+							} mt-2`}
+						>
 							{category}
 						</CardSubtitle>
 						{price ? (
 							<CardSubtitle
 								as="p"
-								className="fs-6 fs-md-5 mt-2"
+								className={`fs-6 ${
+									isFontSmall ? 'fs-lg-6' : 'fs-lg-5'
+								} mt-2`}
 							>{`₹${price}`}</CardSubtitle>
 						) : null}
 					</div>

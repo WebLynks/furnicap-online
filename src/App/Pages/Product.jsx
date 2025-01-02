@@ -44,18 +44,14 @@ function Product() {
 								</div>
 								{/* <RandomImageGallery /> */}
 								<Container fluid className="mt-4">
-									<Row xs={2} className="g-4">
+									<Row xs={2} className="g-2">
 										{randomProducts1.map((product) => {
 											return (
-												<Col key={product.product_name}>
-													<ProductCard
-														key={
-															product.product_name
-														}
-														{...product}
-														isFontSmall={true}
-													/>
-												</Col>
+												<ProductCard
+													key={product.product_name}
+													{...product}
+													isFontSmall={true}
+												/>
 											);
 										})}
 									</Row>
@@ -67,18 +63,14 @@ function Product() {
 								</div>
 								{/* <RandomImageGallery /> */}
 								<Container fluid className="mt-4">
-									<Row xs={2} className="g-4">
+									<Row xs={2} className="g-2">
 										{randomProducts2.map((product) => {
 											return (
-												<Col key={product.product_name}>
-													<ProductCard
-														key={
-															product.product_name
-														}
-														{...product}
-														isFontSmall={true}
-													/>
-												</Col>
+												<ProductCard
+													key={product.product_name}
+													{...product}
+													isFontSmall={true}
+												/>
 											);
 										})}
 									</Row>
@@ -218,16 +210,13 @@ function Product() {
 						<div className="h5 mt-5">Other designs you'll like</div>
 						{/* <RandomImageGallery /> */}
 						<Container fluid className="mt-4">
-							<Row xs={2} className="g-4">
+							<Row xs={2} className="g-2">
 								{randomProducts1.map((product) => {
 									return (
-										<Col key={product.product_name}>
-											<ProductCard
-												key={product.product_name}
-												{...product}
-												isFontSmall={true}
-											/>
-										</Col>
+										<ProductCard
+											key={product.product_name}
+											{...product}
+										/>
 									);
 								})}
 							</Row>
@@ -237,16 +226,13 @@ function Product() {
 						<div className="h5 mt-5">Customers also bought</div>
 						{/* <RandomImageGallery /> */}
 						<Container fluid className="mt-4">
-							<Row xs={2} className="g-4">
+							<Row xs={2} className="g-2">
 								{randomProducts2.map((product) => {
 									return (
-										<Col key={product.product_name}>
-											<ProductCard
-												key={product.product_name}
-												{...product}
-												isFontSmall={true}
-											/>
-										</Col>
+										<ProductCard
+											key={product.product_name}
+											{...product}
+										/>
 									);
 								})}
 							</Row>
