@@ -20,7 +20,7 @@ const ImageGallery = ({ images }) => {
 		<Container>
 			<Row className="gx-0">
 				<Col xs={3} className="">
-					<div className="d-flex flex-column justify-content-start vh-60 gap-2">
+					<div className="d-flex flex-column justify-content-start vh-50 gap-2">
 						{loading
 							? `${images[0]} image`
 							: images.map((img, idx) => (
@@ -39,7 +39,7 @@ const ImageGallery = ({ images }) => {
 					</div>
 				</Col>
 				<Col xs={9} className="">
-					<Container className="vh-60">
+					<Container className="vh-50">
 						<Image fluid src={image} className="w-100 h-95"></Image>
 					</Container>
 				</Col>

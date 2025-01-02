@@ -59,6 +59,33 @@ const getFourRandomProductImages = () => {
 	return productImages;
 };
 
+const getFourRandomProducts = () => {
+	// getFourRandomProducts without any duplicate products
+	const products = [];
+	const maxAttempts = 100; // To prevent infinite loop
+	let attempts = 0;
+
+	while (products.length < 4 && attempts < maxAttempts) {
+		const randomIndex = Math.floor(Math.random() * PRODUCTS.length);
+		const randomProduct = PRODUCTS[randomIndex];
+
+		if (
+			products.findIndex(
+				(product) => product.product_name === randomProduct.product_name
+			) === -1
+		) {
+			products.push(randomProduct);
+		}
+		attempts++;
+	}
+
+	if (products.length < 4) {
+		console.warn('Could not find 4 unique products.');
+	}
+
+	return products;
+};
+
 export {
 	getproduct,
 	getTestimonials,
@@ -67,4 +94,5 @@ export {
 	getProducts,
 	getProductWithEachCategory,
 	getFourRandomProductImages,
+	getFourRandomProducts,
 };

@@ -3,20 +3,28 @@ import Footer from '../Sections/Footer';
 import Header from '../Sections/Header/Header';
 import ImageGallery from '../Components/ImageGallery';
 import { useParams } from 'react-router-dom';
-import { getproduct } from '../../Data/dataAPIs';
+import { getFourRandomProducts, getproduct } from '../../Data/dataAPIs';
 // import RandomImageGallery from '../Components/RandomImageGallery';
 import { useEffect } from 'react';
+import ProductCard from '../Components/ProductCard';
 
 function Product() {
 	const { productName } = useParams();
 	const product_name = productName.split('-').join(' ');
 	const product = getproduct(product_name);
 	const images = [product.image_name, product.image_name, product.image_name];
+	const randomProducts1 = getFourRandomProducts();
+	const randomProducts2 = getFourRandomProducts();
 
 	// scroll to top on page load smoothly
 	useEffect(() => {
-		window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
-	}, []);
+		setTimeout(() => {
+			window.scrollTo({
+				top: 0,
+				behavior: 'smooth',
+			});
+		}, 100);
+	});
 
 	return (
 		<>
@@ -31,16 +39,50 @@ function Product() {
 						</Row>
 						<Row className="d-none d-md-block">
 							<Col xs={12}>
-								<div className="h5 mt-5 d-none">
+								<div className="h5 mt-5">
 									Other designs you'll like
 								</div>
 								{/* <RandomImageGallery /> */}
+								<Container fluid className="mt-4">
+									<Row xs={2} className="g-4">
+										{randomProducts1.map((product) => {
+											return (
+												<Col key={product.product_name}>
+													<ProductCard
+														key={
+															product.product_name
+														}
+														{...product}
+														isFontSmall={true}
+													/>
+												</Col>
+											);
+										})}
+									</Row>
+								</Container>
 							</Col>
 							<Col xs={12}>
-								<div className="h5 mt-5 d-none">
+								<div className="h5 mt-5">
 									Customers also bought
 								</div>
 								{/* <RandomImageGallery /> */}
+								<Container fluid className="mt-4">
+									<Row xs={2} className="g-4">
+										{randomProducts2.map((product) => {
+											return (
+												<Col key={product.product_name}>
+													<ProductCard
+														key={
+															product.product_name
+														}
+														{...product}
+														isFontSmall={true}
+													/>
+												</Col>
+											);
+										})}
+									</Row>
+								</Container>
 							</Col>
 						</Row>
 					</Col>
@@ -175,10 +217,40 @@ function Product() {
 					<Col xs={12}>
 						<div className="h5 mt-5">Other designs you'll like</div>
 						{/* <RandomImageGallery /> */}
+						<Container fluid className="mt-4">
+							<Row xs={2} className="g-4">
+								{randomProducts1.map((product) => {
+									return (
+										<Col key={product.product_name}>
+											<ProductCard
+												key={product.product_name}
+												{...product}
+												isFontSmall={true}
+											/>
+										</Col>
+									);
+								})}
+							</Row>
+						</Container>
 					</Col>
 					<Col xs={12}>
 						<div className="h5 mt-5">Customers also bought</div>
 						{/* <RandomImageGallery /> */}
+						<Container fluid className="mt-4">
+							<Row xs={2} className="g-4">
+								{randomProducts2.map((product) => {
+									return (
+										<Col key={product.product_name}>
+											<ProductCard
+												key={product.product_name}
+												{...product}
+												isFontSmall={true}
+											/>
+										</Col>
+									);
+								})}
+							</Row>
+						</Container>
 					</Col>
 				</Row>
 			</Container>

@@ -2,7 +2,13 @@ import { Card, CardSubtitle, CardTitle, Col, Image } from 'react-bootstrap';
 import useImage from '../useImage';
 import { Link } from 'react-router-dom';
 
-function ProductCard({ image_name, product_name, category, price }) {
+function ProductCard({
+	image_name,
+	product_name,
+	category,
+	price,
+	isFontSmall,
+}) {
 	const { loading, error, image: img } = useImage(image_name);
 	const productName = product_name.split(' ').join('-');
 
@@ -18,7 +24,11 @@ function ProductCard({ image_name, product_name, category, price }) {
 					text="dark"
 					className="p-3 border-dark-subtle border-sm-0 rounded-0 rounded-sm-2 h-100"
 				>
-					<CardTitle className="fs-6 fs-md-5 fw-bold">
+					<CardTitle
+						className={`fs-6 ${
+							isFontSmall ? 'fs-md-6' : 'fs-md-5'
+						} fw-bold`}
+					>
 						{product_name}
 					</CardTitle>
 					{loading ? (

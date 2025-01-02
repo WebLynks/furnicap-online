@@ -4,7 +4,6 @@ import ProductCard from '../Components/ProductCard';
 import Header from '../Sections/Header/Header';
 import Footer from '../Sections/Footer';
 import { useEffect } from 'react';
-import { Outlet } from 'react-router-dom';
 
 function Products() {
 	const products = getProducts();
