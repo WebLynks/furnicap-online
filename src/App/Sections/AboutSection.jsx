@@ -12,20 +12,19 @@ function AboutSection() {
 					</Col>
 					<Col md="8" className="mt-3 mt-md-0 fs-6 fs-md-5">
 						<p>
-							Singhania Enterprises, operating under the brand
-							name Furnicap, offers innovative, ergonomic, and
-							affordable furniture solutions, striving to be
-							market leaders. With 20 years of experience, we
-							specialize in premiumquality furniture certified by
-							ISO, NSIC, and MSME. Our products suit commercial,
-							hospitality, and residential spaces, exceeding
-							client expectations through extensive ergonomic
-							research, advanced manufacturing, and effective
-							marketing. We collaborate with professionals to
-							ensure successful design execution, offering
-							customized services for individual needs. Whether
-							for small or bulk orders, we enhance spaces with
-							aesthetically pleasing designs.
+							Singhania Enterprises operates under the brand name
+							Furnicap offers innovative, ergonomic and affordable
+							furniture solutions while striving to be market
+							leaders. With 20 years of experience we specialize
+							in premium-quality furniture certified by ISO, NSIC
+							and MSME. Our products suit commercial, hospitality
+							and residential spaces exceeding client expectations
+							through ergonomic research, advanced manufacturing
+							and effective marketing. We collaborate with
+							professionals to ensure successful design execution
+							and offer customized services for individual needs.
+							Whether for small or bulk orders we enhance spaces
+							with aesthetically pleasing designs.
 						</p>
 					</Col>
 					<Col md="4" className="mt-5">
