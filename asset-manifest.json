@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.6f613449.css",
-    "main.js": "/static/js/main.7c5f66c6.js",
+    "main.js": "/static/js/main.2c0a61b7.js",
     "static/js/1638.03d372e3.chunk.js": "/static/js/1638.03d372e3.chunk.js",
     "static/js/5651.a741724f.chunk.js": "/static/js/5651.a741724f.chunk.js",
     "static/js/5556.a331aafd.chunk.js": "/static/js/5556.a331aafd.chunk.js",
@@ -135,10 +135,10 @@
     "static/media/furnicap_exceptionalservice.png": "/static/media/furnicap_exceptionalservice.d26a3cf1c35ffa3c0bc5.png",
     "index.html": "/index.html",
     "main.6f613449.css.map": "/static/css/main.6f613449.css.map",
-    "main.7c5f66c6.js.map": "/static/js/main.7c5f66c6.js.map"
+    "main.2c0a61b7.js.map": "/static/js/main.2c0a61b7.js.map"
   },
   "entrypoints": [
     "static/css/main.6f613449.css",
-    "static/js/main.7c5f66c6.js"
+    "static/js/main.2c0a61b7.js"
   ]
 }
