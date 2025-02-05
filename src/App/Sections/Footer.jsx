@@ -148,7 +148,14 @@ function Footer() {
 					</Col>
 					<Col className="text-center text-md-end fs-p9r">
 						Designed and Developed by{' '}
-						<i className="fw-bold">WebLynks</i>
+						<a
+							href="https://gitanshugupta7.github.io/WebLyknsPortfolio/"
+							target="_blank"
+							rel="noopener noreferrer"
+							className="text-decoration-none"
+						>
+							<i className="fw-bold">WebLynks</i>
+						</a>
 					</Col>
 				</Row>
 			</Container>
